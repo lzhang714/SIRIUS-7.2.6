@@ -1,0 +1,903 @@
+Warning! Required level of thread support is not provided.
+provided: 2 
+required: 3
+SIRIUS 6.3.2, git hash: 954e2071e74bb0c3babe1a8df4956448cebc2a9a
+
+SIRIUS version : 6.3.2
+git hash       : 954e2071e74bb0c3babe1a8df4956448cebc2a9a
+git branch     : release tag v6.3.2
+start time     : Sun, 14 Nov 2021 23:27:34
+
+number of MPI ranks           : 128
+MPI grid                      : 8 4 4
+maximum number of OMP threads : 8
+number of MPI ranks per node  : 4
+page size (Kb)                : 4
+number of pages               : 32973769
+available memory (GB)         : 125
+
+FFT context for density and potential
+=====================================
+  comm size                             : 4
+  plane wave cutoff                     : 20.000000
+  grid size                             : 120 120 120   total : 1728000
+  grid limits                           : -59 60   -59 60   -59 60
+  number of G-vectors within the cutoff : 747103
+  local number of G-vectors             : 5817
+  number of G-shells                    : 97165
+
+FFT context for coarse grid
+=====================================
+  comm size                             : 1
+  plane wave cutoff                     : 17.000000
+  grid size                             : 100 100 96   total : 960000
+  grid limits                           : -49 50   -49 50   -47 48
+  number of G-vectors within the cutoff : 458691
+  local number of G-vectors             : 3580
+  number of G-shells                    : 60065
+
+
+Unit cell
+--------------------------------------------------------------------------------
+lattice vectors
+  a1 :      18.1096316167       0.0000000000       0.0000000000 
+  a2 :       0.0000000000      18.1095149104       0.0000000000 
+  a3 :       0.0000000000       0.0000000000      16.8615051111 
+reciprocal lattice vectors
+  b1 :       0.3469526846       0.0000000000       0.0000000000 
+  b2 :       0.0000000000       0.3469549206       0.0000000000 
+  b3 :       0.0000000000       0.0000000000       0.3726349022 
+
+unit cell volume :      5529.84262539 [a.u.^3]
+1/sqrt(omega)    :         0.01344756
+MT volume        : 89.204476 ( 1.61%)
+IT volume        : 5440.638149 (98.39%)
+
+number of atom types : 1
+type id : 0   symbol : Ni   mt_radius :   2.200000, num_atoms: 2
+total number of atoms : 2
+number of symmetry classes : 1
+
+atom id              position                    vector_field        type id    class id
+----------------------------------------------------------------------------------------
+     0      0.999997 0.999999 0.003007   0.000000 0.000000 0.000000        0           0
+     1      0.499992 0.500000 0.503016   0.000000 0.000000 0.000000        0           0
+
+class id : 0   atom id : 0 1 
+
+atom id              position (Cartesian, a.u.)
+----------------------------------------------------------------------------------------
+     0         18.109580313788    18.109504363432     0.050709429458
+     1          9.054668302882     9.054748631782     8.481603501699
+
+class id : 0   atom id : 0 1 
+
+minimum bond length:      15.331397554946
+
+space group number   : 11
+international symbol : P2_1/m
+Hall symbol          : -P 2yb
+number of operations : 4
+transformation matrix : 
+    0.000000     0.000000    -1.000000 
+    0.000000    -1.000000     0.000000 
+   -1.000000     0.000000     0.000000 
+origin shift : 
+    0.753012     0.749999     0.749995
+symmetry operations  : 
+isym : 0
+R :   1   0   0 
+      0   1   0 
+      0   0   1 
+T :  -0.0000  -0.0000  -0.0000 
+S :   1.0000   0.0000   0.0000 
+      0.0000   1.0000   0.0000 
+      0.0000   0.0000   1.0000 
+
+isym : 1
+R :  -1   0   0 
+      0  -1   0 
+      0   0  -1 
+T :   0.5000   0.5000   0.5060 
+S :   1.0000   0.0000   0.0000 
+      0.0000   1.0000   0.0000 
+      0.0000   0.0000   1.0000 
+
+isym : 2
+R :  -1   0   0 
+      0   1   0 
+      0   0  -1 
+T :   0.5000   0.5000   0.5060 
+S :   1.0000   0.0000   0.0000 
+      0.0000   1.0000   0.0000 
+      0.0000   0.0000   1.0000 
+
+isym : 3
+R :   1   0   0 
+      0  -1   0 
+      0   0   1 
+T :  -0.0000   1.0000  -0.0000 
+S :   1.0000   0.0000   0.0000 
+      0.0000   1.0000   0.0000 
+      0.0000   0.0000   1.0000 
+
+
+label          : Ni
+--------------------------------------------------------------------------------
+symbol         : Ni
+name           : nickel
+zn             : 28
+mass           : 58.693400
+mt_radius      : 2.200000
+num_mt_points  : 1500
+grid_origin    : 0.000000
+grid_name      : exponential
+
+number of core electrons    : 10.000000
+number of valence electrons : 18.000000
+
+atomic levels (n, l, k, occupancy, core)
+1  0  1    2.0000 1
+2  0  1    2.0000 1
+2  1  1    2.0000 1
+2  1  2    4.0000 1
+3  0  1    2.0000 0
+3  1  1    2.0000 0
+3  1  2    4.0000 0
+3  2  2    4.0000 0
+3  2  3    4.0000 0
+4  0  1    2.0000 0
+
+local orbitals
+[{l :  0, n :  3, enu : -3.950890, dme : 0, auto : 1}, {l :  0, n :  3, enu : -3.950890, dme : 1, auto : 1}]
+[{l :  1, n :  3, enu : -2.593910, dme : 0, auto : 1}, {l :  1, n :  3, enu : -2.593910, dme : 1, auto : 1}]
+[{l :  2, n :  3, enu : -0.318942, dme : 0, auto : 1}, {l :  2, n :  3, enu : -0.318942, dme : 1, auto : 1}]
+[{l :  0, n :  4, enu : 0.988150, dme : 0, auto : 1}, {l :  0, n :  4, enu : 0.988150, dme : 1, auto : 1}]
+
+augmented wave basis
+[{l :  0, n :  1, enu : 0.150000, dme : 0, auto : 0}, {l :  0, n :  1, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  1, n :  2, enu : 0.150000, dme : 0, auto : 0}, {l :  1, n :  2, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  2, n :  3, enu : 0.150000, dme : 0, auto : 0}, {l :  2, n :  3, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  3, n :  4, enu : 0.150000, dme : 0, auto : 0}, {l :  3, n :  4, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  4, n :  5, enu : 0.150000, dme : 0, auto : 0}, {l :  4, n :  5, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  5, n :  6, enu : 0.150000, dme : 0, auto : 0}, {l :  5, n :  6, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  6, n :  7, enu : 0.150000, dme : 0, auto : 0}, {l :  6, n :  7, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  7, n :  8, enu : 0.150000, dme : 0, auto : 0}, {l :  7, n :  8, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  8, n :  9, enu : 0.150000, dme : 0, auto : 0}, {l :  8, n :  9, enu : 0.150000, dme : 1, auto : 0}]
+maximum order of aw : 2
+
+total number of radial functions : 22
+lmax of radial functions         : 8
+max. number of radial functions  : 4
+total number of basis functions  : 172
+number of aw basis functions     : 162
+number of lo basis functions     : 10
+
+total nuclear charge               : 56
+number of core electrons           : 20.000000
+number of valence electrons        : 36.000000
+total number of electrons          : 56.000000
+extra charge                       : 0.000000
+total number of aw basis functions : 324
+total number of lo basis functions : 20
+number of first-variational states : 200
+number of bands                    : 200
+number of spins                    : 1
+number of magnetic dimensions      : 0
+lmax_apw                           : 8
+lmax_rho                           : 8
+lmax_pot                           : 8
+lmax_rf                            : 8
+smearing width                     : 0.001000
+cyclic block size                  : 32
+|G+k| cutoff                       : 8.500000
+valence relativity                 : none
+core relativity                    : none
+standard eigen-value solver        : LAPACK
+generalized eigen-value solver     : LAPACK
+processing unit                    : CPU
+
+iterative solver                   : davidson
+number of steps                    : 32
+subspace size                      : 8
+
+spglib version: 1.14.1
+HDF5 version: 1.10.5
+Libxc version: 4.3.4
+
+XC functionals
+==============
+1) XC_LDA_X: Slater exchange
+P. A. M. Dirac, Math. Proc. Cambridge Philos. Soc. 26, 376 (1930) (10.1017/S0305004100016108)
+F. Bloch, Z. Phys. 57, 545 (1929) (10.1007/BF01340281)
+
+2) XC_LDA_C_PZ: Perdew & Zunger
+J. P. Perdew and A. Zunger, Phys. Rev. B 23, 5048 (1981) (10.1103/PhysRevB.23.5048)
+
+
+=== Warning at line 33 of file /global/cscratch1/sd/zhang714/install_sirius_2019_08_22/SIRIUS-develop/src/K_point/k_point.cpp ===
+G+k cutoff (8.5) is too large for a given lmax (8) and a maximum MT radius (2.2)
+suggested minimum value for lmax : 19
+
+
+total number of k-points : 8
+--------------------------------------------------------------------------------
+  ik                vk                    weight  num_gkvec   gklo_basis_size
+--------------------------------------------------------------------------------
+   0     0.0000   0.0000   0.0000       0.125000      57441             57461
+   1     0.5000   0.0000   0.0000       0.125000      57296             57316
+   2     0.0000   0.5000   0.0000       0.125000      57296             57316
+   3     0.5000   0.5000   0.0000       0.125000      57252             57272
+   4     0.0000   0.0000   0.5000       0.125000      57342             57362
+   5     0.5000   0.0000   0.5000       0.125000      57376             57396
+   6     0.0000   0.5000   0.5000       0.125000      57376             57396
+   7     0.5000   0.5000   0.5000       0.125000      57312             57332
+
++------------------------------+
+| SCF iteration   0 out of 200 |
++------------------------------+
+
+Linearization energies
+Atom : Ni, class id : 0
+augmented waves
+local orbitals
+n =  3   l =  0   order = 0   enu =    -3.950890
+n =  3   l =  0   order = 1   enu =    -3.950890
+n =  3   l =  1   order = 0   enu =    -2.593910
+n =  3   l =  1   order = 1   enu =    -2.593910
+n =  3   l =  2   order = 0   enu =    -0.318942
+n =  3   l =  2   order = 1   enu =    -0.318942
+n =  4   l =  0   order = 0   enu =     0.582236  +
+n =  4   l =  0   order = 1   enu =     0.582236  +
+
+smallest eigen-value of the singular components:   0.0000072446585382
+iterative solver tolerance:     0.000000000000
+step: 0, current subspace size: 240, maximum subspace size: 1640
+step: 1, current subspace size: 440, maximum subspace size: 1640
+step: 2, current subspace size: 640, maximum subspace size: 1640
+step: 3, current subspace size: 840, maximum subspace size: 1640
+step: 4, current subspace size: 1040, maximum subspace size: 1640
+step: 5, current subspace size: 1240, maximum subspace size: 1640
+step: 6, current subspace size: 1440, maximum subspace size: 1640
+step: 7, current subspace size: 1640, maximum subspace size: 1640
+step: 8, current subspace size: 440, maximum subspace size: 1640
+step: 9, current subspace size: 640, maximum subspace size: 1640
+step: 10, current subspace size: 840, maximum subspace size: 1640
+step: 11, current subspace size: 1040, maximum subspace size: 1640
+step: 12, current subspace size: 1240, maximum subspace size: 1640
+step: 13, current subspace size: 1440, maximum subspace size: 1640
+step: 14, current subspace size: 1640, maximum subspace size: 1640
+step: 15, current subspace size: 440, maximum subspace size: 1640
+step: 16, current subspace size: 640, maximum subspace size: 1640
+step: 17, current subspace size: 840, maximum subspace size: 1640
+step: 18, current subspace size: 1040, maximum subspace size: 1640
+step: 19, current subspace size: 1240, maximum subspace size: 1640
+step: 20, current subspace size: 1440, maximum subspace size: 1640
+step: 21, current subspace size: 1640, maximum subspace size: 1640
+step: 22, current subspace size: 440, maximum subspace size: 1640
+step: 23, current subspace size: 640, maximum subspace size: 1640
+step: 24, current subspace size: 840, maximum subspace size: 1640
+step: 25, current subspace size: 1040, maximum subspace size: 1640
+step: 26, current subspace size: 1240, maximum subspace size: 1640
+step: 27, current subspace size: 1440, maximum subspace size: 1640
+step: 28, current subspace size: 1640, maximum subspace size: 1640
+step: 29, current subspace size: 440, maximum subspace size: 1640
+step: 30, current subspace size: 640, maximum subspace size: 1640
+step: 31, current subspace size: 840, maximum subspace size: 1640
+Lowest band energies
+ik :  0,    -3.948055   -3.948053   -2.590259   -2.590253   -2.590215   -2.590213   -2.590205   -2.590184   -0.338490   -0.337859
+ik :  1,    -3.948053   -3.948053   -2.590249   -2.590248   -2.590193   -2.590184   -2.590176   -2.590157   -0.337804   -0.337773
+Warning! Required level of thread support is not provided.
+provided: 2 
+required: 3
+
+=== Warning at line 33 of file /global/cscratch1/sd/zhang714/install_sirius_2019_08_22/SIRIUS-develop/src/K_point/k_point.cpp ===
+G+k cutoff (8.5) is too large for a given lmax (8) and a maximum MT radius (2.2)
+suggested minimum value for lmax : 19
+
+smallest eigen-value of the singular components:   0.0000229680031769
+iterative solver tolerance:     0.000000000000
+step: 0, current subspace size: 240, maximum subspace size: 1640
+step: 1, current subspace size: 440, maximum subspace size: 1640
+step: 2, current subspace size: 640, maximum subspace size: 1640
+step: 3, current subspace size: 840, maximum subspace size: 1640
+step: 4, current subspace size: 1040, maximum subspace size: 1640
+step: 5, current subspace size: 1240, maximum subspace size: 1640
+step: 6, current subspace size: 1440, maximum subspace size: 1640
+step: 7, current subspace size: 1640, maximum subspace size: 1640
+step: 8, current subspace size: 440, maximum subspace size: 1640
+step: 9, current subspace size: 640, maximum subspace size: 1640
+step: 10, current subspace size: 840, maximum subspace size: 1640
+step: 11, current subspace size: 1040, maximum subspace size: 1640
+step: 12, current subspace size: 1240, maximum subspace size: 1640
+step: 13, current subspace size: 1440, maximum subspace size: 1640
+step: 14, current subspace size: 1640, maximum subspace size: 1640
+step: 15, current subspace size: 440, maximum subspace size: 1640
+step: 16, current subspace size: 640, maximum subspace size: 1640
+step: 17, current subspace size: 840, maximum subspace size: 1640
+step: 18, current subspace size: 1040, maximum subspace size: 1640
+step: 19, current subspace size: 1240, maximum subspace size: 1640
+step: 20, current subspace size: 1440, maximum subspace size: 1640
+step: 21, current subspace size: 1640, maximum subspace size: 1640
+step: 22, current subspace size: 440, maximum subspace size: 1640
+step: 23, current subspace size: 640, maximum subspace size: 1640
+step: 24, current subspace size: 840, maximum subspace size: 1640
+step: 25, current subspace size: 1040, maximum subspace size: 1640
+step: 26, current subspace size: 1240, maximum subspace size: 1640
+step: 27, current subspace size: 1440, maximum subspace size: 1640
+step: 28, current subspace size: 1640, maximum subspace size: 1640
+step: 29, current subspace size: 440, maximum subspace size: 1640
+step: 30, current subspace size: 640, maximum subspace size: 1640
+step: 31, current subspace size: 840, maximum subspace size: 1640
+smallest eigen-value of the singular components:   0.0000114135945242
+iterative solver tolerance:     0.000000000000
+step: 0, current subspace size: 240, maximum subspace size: 1640
+step: 1, current subspace size: 440, maximum subspace size: 1640
+step: 2, current subspace size: 640, maximum subspace size: 1640
+step: 3, current subspace size: 840, maximum subspace size: 1640
+step: 4, current subspace size: 1040, maximum subspace size: 1640
+step: 5, current subspace size: 1240, maximum subspace size: 1640
+step: 6, current subspace size: 1440, maximum subspace size: 1640
+step: 7, current subspace size: 1640, maximum subspace size: 1640
+step: 8, current subspace size: 440, maximum subspace size: 1640
+step: 9, current subspace size: 640, maximum subspace size: 1640
+step: 10, current subspace size: 840, maximum subspace size: 1640
+step: 11, current subspace size: 1040, maximum subspace size: 1640
+step: 12, current subspace size: 1240, maximum subspace size: 1640
+step: 13, current subspace size: 1440, maximum subspace size: 1640
+step: 14, current subspace size: 1640, maximum subspace size: 1640
+step: 15, current subspace size: 440, maximum subspace size: 1640
+step: 16, current subspace size: 640, maximum subspace size: 1640
+step: 17, current subspace size: 840, maximum subspace size: 1640
+step: 18, current subspace size: 1040, maximum subspace size: 1640
+step: 19, current subspace size: 1240, maximum subspace size: 1640
+step: 20, current subspace size: 1440, maximum subspace size: 1640
+Warning! Required level of thread support is not provided.
+provided: 2 
+required: 3
+
+=== Warning at line 33 of file /global/cscratch1/sd/zhang714/install_sirius_2019_08_22/SIRIUS-develop/src/K_point/k_point.cpp ===
+G+k cutoff (8.5) is too large for a given lmax (8) and a maximum MT radius (2.2)
+suggested minimum value for lmax : 19
+
+smallest eigen-value of the singular components:   0.0000246609525552
+iterative solver tolerance:     0.000000000000
+step: 0, current subspace size: 240, maximum subspace size: 1640
+step: 1, current subspace size: 440, maximum subspace size: 1640
+step: 2, current subspace size: 640, maximum subspace size: 1640
+step: 3, current subspace size: 840, maximum subspace size: 1640
+step: 4, current subspace size: 1040, maximum subspace size: 1640
+step: 5, current subspace size: 1240, maximum subspace size: 1640
+step: 6, current subspace size: 1440, maximum subspace size: 1640
+step: 7, current subspace size: 1640, maximum subspace size: 1640
+step: 8, current subspace size: 440, maximum subspace size: 1640
+step: 9, current subspace size: 640, maximum subspace size: 1640
+step: 10, current subspace size: 840, maximum subspace size: 1640
+step: 11, current subspace size: 1040, maximum subspace size: 1640
+step: 12, current subspace size: 1240, maximum subspace size: 1640
+step: 13, current subspace size: 1440, maximum subspace size: 1640
+step: 14, current subspace size: 1640, maximum subspace size: 1640
+step: 15, current subspace size: 440, maximum subspace size: 1640
+step: 16, current subspace size: 640, maximum subspace size: 1640
+step: 17, current subspace size: 840, maximum subspace size: 1640
+step: 18, current subspace size: 1040, maximum subspace size: 1640
+step: 19, current subspace size: 1240, maximum subspace size: 1640
+step: 20, current subspace size: 1440, maximum subspace size: 1640
+step: 21, current subspace size: 1640, maximum subspace size: 1640
+step: 22, current subspace size: 440, maximum subspace size: 1640
+step: 23, current subspace size: 640, maximum subspace size: 1640
+step: 24, current subspace size: 840, maximum subspace size: 1640
+step: 25, current subspace size: 1040, maximum subspace size: 1640
+step: 26, current subspace size: 1240, maximum subspace size: 1640
+step: 27, current subspace size: 1440, maximum subspace size: 1640
+step: 28, current subspace size: 1640, maximum subspace size: 1640
+step: 29, current subspace size: 440, maximum subspace size: 1640
+step: 30, current subspace size: 640, maximum subspace size: 1640
+step: 31, current subspace size: 840, maximum subspace size: 1640
+smallest eigen-value of the singular components:   0.0000120887803768
+iterative solver tolerance:     0.000000000000
+step: 0, current subspace size: 240, maximum subspace size: 1640
+step: 1, current subspace size: 440, maximum subspace size: 1640
+step: 2, current subspace size: 640, maximum subspace size: 1640
+step: 3, current subspace size: 840, maximum subspace size: 1640
+step: 4, current subspace size: 1040, maximum subspace size: 1640
+step: 5, current subspace size: 1240, maximum subspace size: 1640
+step: 6, current subspace size: 1440, maximum subspace size: 1640
+step: 7, current subspace size: 1640, maximum subspace size: 1640
+step: 8, current subspace size: 440, maximum subspace size: 1640
+step: 9, current subspace size: 640, maximum subspace size: 1640
+step: 10, current subspace size: 840, maximum subspace size: 1640
+step: 11, current subspace size: 1040, maximum subspace size: 1640
+step: 12, current subspace size: 1240, maximum subspace size: 1640
+step: 13, current subspace size: 1440, maximum subspace size: 1640
+step: 14, current subspace size: 1640, maximum subspace size: 1640
+step: 15, current subspace size: 440, maximum subspace size: 1640
+step: 16, current subspace size: 640, maximum subspace size: 1640
+step: 17, current subspace size: 840, maximum subspace size: 1640
+step: 18, current subspace size: 1040, maximum subspace size: 1640
+step: 19, current subspace size: 1240, maximum subspace size: 1640
+step: 20, current subspace size: 1440, maximum subspace size: 1640
+Warning! Required level of thread support is not provided.
+provided: 2 
+required: 3
+
+=== Warning at line 33 of file /global/cscratch1/sd/zhang714/install_sirius_2019_08_22/SIRIUS-develop/src/K_point/k_point.cpp ===
+G+k cutoff (8.5) is too large for a given lmax (8) and a maximum MT radius (2.2)
+suggested minimum value for lmax : 19
+
+smallest eigen-value of the singular components:   0.0000112093331784
+iterative solver tolerance:     0.000000000000
+step: 0, current subspace size: 240, maximum subspace size: 1640
+step: 1, current subspace size: 440, maximum subspace size: 1640
+step: 2, current subspace size: 640, maximum subspace size: 1640
+step: 3, current subspace size: 840, maximum subspace size: 1640
+step: 4, current subspace size: 1040, maximum subspace size: 1640
+step: 5, current subspace size: 1240, maximum subspace size: 1640
+step: 6, current subspace size: 1440, maximum subspace size: 1640
+step: 7, current subspace size: 1640, maximum subspace size: 1640
+step: 8, current subspace size: 440, maximum subspace size: 1640
+step: 9, current subspace size: 640, maximum subspace size: 1640
+step: 10, current subspace size: 840, maximum subspace size: 1640
+step: 11, current subspace size: 1040, maximum subspace size: 1640
+step: 12, current subspace size: 1240, maximum subspace size: 1640
+step: 13, current subspace size: 1440, maximum subspace size: 1640
+step: 14, current subspace size: 1640, maximum subspace size: 1640
+step: 15, current subspace size: 440, maximum subspace size: 1640
+step: 16, current subspace size: 640, maximum subspace size: 1640
+step: 17, current subspace size: 840, maximum subspace size: 1640
+step: 18, current subspace size: 1040, maximum subspace size: 1640
+step: 19, current subspace size: 1240, maximum subspace size: 1640
+step: 20, current subspace size: 1440, maximum subspace size: 1640
+step: 21, current subspace size: 1640, maximum subspace size: 1640
+step: 22, current subspace size: 440, maximum subspace size: 1640
+step: 23, current subspace size: 640, maximum subspace size: 1640
+step: 24, current subspace size: 840, maximum subspace size: 1640
+step: 25, current subspace size: 1040, maximum subspace size: 1640
+step: 26, current subspace size: 1240, maximum subspace size: 1640
+step: 27, current subspace size: 1440, maximum subspace size: 1640
+step: 28, current subspace size: 1640, maximum subspace size: 1640
+step: 29, current subspace size: 440, maximum subspace size: 1640
+step: 30, current subspace size: 640, maximum subspace size: 1640
+step: 31, current subspace size: 840, maximum subspace size: 1640
+smallest eigen-value of the singular components:   0.0000037814777328
+iterative solver tolerance:     0.000000000000
+step: 0, current subspace size: 240, maximum subspace size: 1640
+step: 1, current subspace size: 440, maximum subspace size: 1640
+step: 2, current subspace size: 640, maximum subspace size: 1640
+step: 3, current subspace size: 840, maximum subspace size: 1640
+step: 4, current subspace size: 1040, maximum subspace size: 1640
+step: 5, current subspace size: 1240, maximum subspace size: 1640
+step: 6, current subspace size: 1440, maximum subspace size: 1640
+step: 7, current subspace size: 1640, maximum subspace size: 1640
+step: 8, current subspace size: 440, maximum subspace size: 1640
+step: 9, current subspace size: 640, maximum subspace size: 1640
+step: 10, current subspace size: 840, maximum subspace size: 1640
+step: 11, current subspace size: 1040, maximum subspace size: 1640
+step: 12, current subspace size: 1240, maximum subspace size: 1640
+step: 13, current subspace size: 1440, maximum subspace size: 1640
+step: 14, current subspace size: 1640, maximum subspace size: 1640
+step: 15, current subspace size: 440, maximum subspace size: 1640
+step: 16, current subspace size: 640, maximum subspace size: 1640
+step: 17, current subspace size: 840, maximum subspace size: 1640
+step: 18, current subspace size: 1040, maximum subspace size: 1640
+step: 19, current subspace size: 1240, maximum subspace size: 1640
+step: 20, current subspace size: 1440, maximum subspace size: 1640
+Warning! Required level of thread support is not provided.
+provided: 2 
+required: 3
+
+=== Warning at line 33 of file /global/cscratch1/sd/zhang714/install_sirius_2019_08_22/SIRIUS-develop/src/K_point/k_point.cpp ===
+G+k cutoff (8.5) is too large for a given lmax (8) and a maximum MT radius (2.2)
+suggested minimum value for lmax : 19
+
+smallest eigen-value of the singular components:   0.0000280736614289
+iterative solver tolerance:     0.000000000000
+step: 0, current subspace size: 240, maximum subspace size: 1640
+step: 1, current subspace size: 440, maximum subspace size: 1640
+step: 2, current subspace size: 640, maximum subspace size: 1640
+step: 3, current subspace size: 840, maximum subspace size: 1640
+step: 4, current subspace size: 1040, maximum subspace size: 1640
+step: 5, current subspace size: 1240, maximum subspace size: 1640
+step: 6, current subspace size: 1440, maximum subspace size: 1640
+step: 7, current subspace size: 1640, maximum subspace size: 1640
+step: 8, current subspace size: 440, maximum subspace size: 1640
+step: 9, current subspace size: 640, maximum subspace size: 1640
+step: 10, current subspace size: 840, maximum subspace size: 1640
+step: 11, current subspace size: 1040, maximum subspace size: 1640
+step: 12, current subspace size: 1240, maximum subspace size: 1640
+step: 13, current subspace size: 1440, maximum subspace size: 1640
+step: 14, current subspace size: 1640, maximum subspace size: 1640
+step: 15, current subspace size: 440, maximum subspace size: 1640
+step: 16, current subspace size: 640, maximum subspace size: 1640
+step: 17, current subspace size: 840, maximum subspace size: 1640
+step: 18, current subspace size: 1040, maximum subspace size: 1640
+step: 19, current subspace size: 1240, maximum subspace size: 1640
+step: 20, current subspace size: 1440, maximum subspace size: 1640
+step: 21, current subspace size: 1640, maximum subspace size: 1640
+step: 22, current subspace size: 440, maximum subspace size: 1640
+step: 23, current subspace size: 640, maximum subspace size: 1640
+step: 24, current subspace size: 840, maximum subspace size: 1640
+step: 25, current subspace size: 1040, maximum subspace size: 1640
+step: 26, current subspace size: 1240, maximum subspace size: 1640
+step: 27, current subspace size: 1440, maximum subspace size: 1640
+step: 28, current subspace size: 1640, maximum subspace size: 1640
+step: 29, current subspace size: 440, maximum subspace size: 1640
+step: 30, current subspace size: 640, maximum subspace size: 1640
+step: 31, current subspace size: 840, maximum subspace size: 1640
+smallest eigen-value of the singular components:   0.0000131007480265
+iterative solver tolerance:     0.000000000000
+step: 0, current subspace size: 240, maximum subspace size: 1640
+step: 1, current subspace size: 440, maximum subspace size: 1640
+step: 2, current subspace size: 640, maximum subspace size: 1640
+step: 3, current subspace size: 840, maximum subspace size: 1640
+step: 4, current subspace size: 1040, maximum subspace size: 1640
+step: 5, current subspace size: 1240, maximum subspace size: 1640
+step: 6, current subspace size: 1440, maximum subspace size: 1640
+step: 7, current subspace size: 1640, maximum subspace size: 1640
+step: 8, current subspace size: 440, maximum subspace size: 1640
+step: 9, current subspace size: 640, maximum subspace size: 1640
+step: 10, current subspace size: 840, maximum subspace size: 1640
+step: 11, current subspace size: 1040, maximum subspace size: 1640
+step: 12, current subspace size: 1240, maximum subspace size: 1640
+step: 13, current subspace size: 1440, maximum subspace size: 1640
+step: 14, current subspace size: 1640, maximum subspace size: 1640
+step: 15, current subspace size: 440, maximum subspace size: 1640
+step: 16, current subspace size: 640, maximum subspace size: 1640
+step: 17, current subspace size: 840, maximum subspace size: 1640
+step: 18, current subspace size: 1040, maximum subspace size: 1640
+step: 19, current subspace size: 1240, maximum subspace size: 1640
+step: 20, current subspace size: 1440, maximum subspace size: 1640
+Warning! Required level of thread support is not provided.
+provided: 2 
+required: 3
+
+=== Warning at line 33 of file /global/cscratch1/sd/zhang714/install_sirius_2019_08_22/SIRIUS-develop/src/K_point/k_point.cpp ===
+G+k cutoff (8.5) is too large for a given lmax (8) and a maximum MT radius (2.2)
+suggested minimum value for lmax : 19
+
+smallest eigen-value of the singular components:   0.0000261004267952
+iterative solver tolerance:     0.000000000000
+step: 0, current subspace size: 240, maximum subspace size: 1640
+step: 1, current subspace size: 440, maximum subspace size: 1640
+step: 2, current subspace size: 640, maximum subspace size: 1640
+step: 3, current subspace size: 840, maximum subspace size: 1640
+step: 4, current subspace size: 1040, maximum subspace size: 1640
+step: 5, current subspace size: 1240, maximum subspace size: 1640
+step: 6, current subspace size: 1440, maximum subspace size: 1640
+step: 7, current subspace size: 1640, maximum subspace size: 1640
+step: 8, current subspace size: 440, maximum subspace size: 1640
+step: 9, current subspace size: 640, maximum subspace size: 1640
+step: 10, current subspace size: 840, maximum subspace size: 1640
+step: 11, current subspace size: 1040, maximum subspace size: 1640
+step: 12, current subspace size: 1240, maximum subspace size: 1640
+step: 13, current subspace size: 1440, maximum subspace size: 1640
+step: 14, current subspace size: 1640, maximum subspace size: 1640
+step: 15, current subspace size: 440, maximum subspace size: 1640
+step: 16, current subspace size: 640, maximum subspace size: 1640
+step: 17, current subspace size: 840, maximum subspace size: 1640
+step: 18, current subspace size: 1040, maximum subspace size: 1640
+step: 19, current subspace size: 1240, maximum subspace size: 1640
+step: 20, current subspace size: 1440, maximum subspace size: 1640
+step: 21, current subspace size: 1640, maximum subspace size: 1640
+step: 22, current subspace size: 440, maximum subspace size: 1640
+step: 23, current subspace size: 640, maximum subspace size: 1640
+step: 24, current subspace size: 840, maximum subspace size: 1640
+step: 25, current subspace size: 1040, maximum subspace size: 1640
+step: 26, current subspace size: 1240, maximum subspace size: 1640
+step: 27, current subspace size: 1440, maximum subspace size: 1640
+step: 28, current subspace size: 1640, maximum subspace size: 1640
+step: 29, current subspace size: 440, maximum subspace size: 1640
+step: 30, current subspace size: 640, maximum subspace size: 1640
+step: 31, current subspace size: 840, maximum subspace size: 1640
+smallest eigen-value of the singular components:   0.0000113345710841
+iterative solver tolerance:     0.000000000000
+step: 0, current subspace size: 240, maximum subspace size: 1640
+step: 1, current subspace size: 440, maximum subspace size: 1640
+step: 2, current subspace size: 640, maximum subspace size: 1640
+step: 3, current subspace size: 840, maximum subspace size: 1640
+step: 4, current subspace size: 1040, maximum subspace size: 1640
+step: 5, current subspace size: 1240, maximum subspace size: 1640
+step: 6, current subspace size: 1440, maximum subspace size: 1640
+step: 7, current subspace size: 1640, maximum subspace size: 1640
+step: 8, current subspace size: 440, maximum subspace size: 1640
+step: 9, current subspace size: 640, maximum subspace size: 1640
+step: 10, current subspace size: 840, maximum subspace size: 1640
+step: 11, current subspace size: 1040, maximum subspace size: 1640
+step: 12, current subspace size: 1240, maximum subspace size: 1640
+step: 13, current subspace size: 1440, maximum subspace size: 1640
+step: 14, current subspace size: 1640, maximum subspace size: 1640
+step: 15, current subspace size: 440, maximum subspace size: 1640
+step: 16, current subspace size: 640, maximum subspace size: 1640
+step: 17, current subspace size: 840, maximum subspace size: 1640
+step: 18, current subspace size: 1040, maximum subspace size: 1640
+step: 19, current subspace size: 1240, maximum subspace size: 1640
+step: 20, current subspace size: 1440, maximum subspace size: 1640
+Warning! Required level of thread support is not provided.
+provided: 2 
+required: 3
+
+=== Warning at line 33 of file /global/cscratch1/sd/zhang714/install_sirius_2019_08_22/SIRIUS-develop/src/K_point/k_point.cpp ===
+G+k cutoff (8.5) is too large for a given lmax (8) and a maximum MT radius (2.2)
+suggested minimum value for lmax : 19
+
+smallest eigen-value of the singular components:   0.0000225578673962
+iterative solver tolerance:     0.000000000000
+step: 0, current subspace size: 240, maximum subspace size: 1640
+step: 1, current subspace size: 440, maximum subspace size: 1640
+step: 2, current subspace size: 640, maximum subspace size: 1640
+step: 3, current subspace size: 840, maximum subspace size: 1640
+step: 4, current subspace size: 1040, maximum subspace size: 1640
+step: 5, current subspace size: 1240, maximum subspace size: 1640
+step: 6, current subspace size: 1440, maximum subspace size: 1640
+step: 7, current subspace size: 1640, maximum subspace size: 1640
+step: 8, current subspace size: 440, maximum subspace size: 1640
+step: 9, current subspace size: 640, maximum subspace size: 1640
+step: 10, current subspace size: 840, maximum subspace size: 1640
+step: 11, current subspace size: 1040, maximum subspace size: 1640
+step: 12, current subspace size: 1240, maximum subspace size: 1640
+step: 13, current subspace size: 1440, maximum subspace size: 1640
+step: 14, current subspace size: 1640, maximum subspace size: 1640
+step: 15, current subspace size: 440, maximum subspace size: 1640
+step: 16, current subspace size: 640, maximum subspace size: 1640
+step: 17, current subspace size: 840, maximum subspace size: 1640
+step: 18, current subspace size: 1040, maximum subspace size: 1640
+step: 19, current subspace size: 1240, maximum subspace size: 1640
+step: 20, current subspace size: 1440, maximum subspace size: 1640
+step: 21, current subspace size: 1640, maximum subspace size: 1640
+step: 22, current subspace size: 440, maximum subspace size: 1640
+step: 23, current subspace size: 640, maximum subspace size: 1640
+step: 24, current subspace size: 840, maximum subspace size: 1640
+step: 25, current subspace size: 1040, maximum subspace size: 1640
+step: 26, current subspace size: 1240, maximum subspace size: 1640
+step: 27, current subspace size: 1440, maximum subspace size: 1640
+step: 28, current subspace size: 1640, maximum subspace size: 1640
+step: 29, current subspace size: 440, maximum subspace size: 1640
+step: 30, current subspace size: 640, maximum subspace size: 1640
+step: 31, current subspace size: 840, maximum subspace size: 1640
+smallest eigen-value of the singular components:   0.0000099874320381
+iterative solver tolerance:     0.000000000000
+step: 0, current subspace size: 240, maximum subspace size: 1640
+step: 1, current subspace size: 440, maximum subspace size: 1640
+step: 2, current subspace size: 640, maximum subspace size: 1640
+step: 3, current subspace size: 840, maximum subspace size: 1640
+step: 4, current subspace size: 1040, maximum subspace size: 1640
+step: 5, current subspace size: 1240, maximum subspace size: 1640
+step: 6, current subspace size: 1440, maximum subspace size: 1640
+step: 7, current subspace size: 1640, maximum subspace size: 1640
+step: 8, current subspace size: 440, maximum subspace size: 1640
+step: 9, current subspace size: 640, maximum subspace size: 1640
+step: 10, current subspace size: 840, maximum subspace size: 1640
+step: 11, current subspace size: 1040, maximum subspace size: 1640
+step: 12, current subspace size: 1240, maximum subspace size: 1640
+step: 13, current subspace size: 1440, maximum subspace size: 1640
+step: 14, current subspace size: 1640, maximum subspace size: 1640
+step: 15, current subspace size: 440, maximum subspace size: 1640
+step: 16, current subspace size: 640, maximum subspace size: 1640
+step: 17, current subspace size: 840, maximum subspace size: 1640
+step: 18, current subspace size: 1040, maximum subspace size: 1640
+step: 19, current subspace size: 1240, maximum subspace size: 1640
+step: 20, current subspace size: 1440, maximum subspace size: 1640
+Warning! Required level of thread support is not provided.
+provided: 2 
+required: 3
+
+=== Warning at line 33 of file /global/cscratch1/sd/zhang714/install_sirius_2019_08_22/SIRIUS-develop/src/K_point/k_point.cpp ===
+G+k cutoff (8.5) is too large for a given lmax (8) and a maximum MT radius (2.2)
+suggested minimum value for lmax : 19
+
+smallest eigen-value of the singular components:   0.0000277643488934
+iterative solver tolerance:     0.000000000000
+step: 0, current subspace size: 240, maximum subspace size: 1640
+step: 1, current subspace size: 440, maximum subspace size: 1640
+step: 2, current subspace size: 640, maximum subspace size: 1640
+step: 3, current subspace size: 840, maximum subspace size: 1640
+step: 4, current subspace size: 1040, maximum subspace size: 1640
+step: 5, current subspace size: 1240, maximum subspace size: 1640
+step: 6, current subspace size: 1440, maximum subspace size: 1640
+step: 7, current subspace size: 1640, maximum subspace size: 1640
+step: 8, current subspace size: 440, maximum subspace size: 1640
+step: 9, current subspace size: 640, maximum subspace size: 1640
+step: 10, current subspace size: 840, maximum subspace size: 1640
+step: 11, current subspace size: 1040, maximum subspace size: 1640
+step: 12, current subspace size: 1240, maximum subspace size: 1640
+step: 13, current subspace size: 1440, maximum subspace size: 1640
+step: 14, current subspace size: 1640, maximum subspace size: 1640
+step: 15, current subspace size: 440, maximum subspace size: 1640
+step: 16, current subspace size: 640, maximum subspace size: 1640
+step: 17, current subspace size: 840, maximum subspace size: 1640
+step: 18, current subspace size: 1040, maximum subspace size: 1640
+step: 19, current subspace size: 1240, maximum subspace size: 1640
+step: 20, current subspace size: 1440, maximum subspace size: 1640
+step: 21, current subspace size: 1640, maximum subspace size: 1640
+step: 22, current subspace size: 440, maximum subspace size: 1640
+step: 23, current subspace size: 640, maximum subspace size: 1640
+step: 24, current subspace size: 840, maximum subspace size: 1640
+step: 25, current subspace size: 1040, maximum subspace size: 1640
+step: 26, current subspace size: 1240, maximum subspace size: 1640
+step: 27, current subspace size: 1440, maximum subspace size: 1640
+step: 28, current subspace size: 1640, maximum subspace size: 1640
+step: 29, current subspace size: 440, maximum subspace size: 1640
+step: 30, current subspace size: 640, maximum subspace size: 1640
+step: 31, current subspace size: 840, maximum subspace size: 1640
+smallest eigen-value of the singular components:   0.0000118029978917
+iterative solver tolerance:     0.000000000000
+step: 0, current subspace size: 240, maximum subspace size: 1640
+step: 1, current subspace size: 440, maximum subspace size: 1640
+step: 2, current subspace size: 640, maximum subspace size: 1640
+step: 3, current subspace size: 840, maximum subspace size: 1640
+step: 4, current subspace size: 1040, maximum subspace size: 1640
+step: 5, current subspace size: 1240, maximum subspace size: 1640
+step: 6, current subspace size: 1440, maximum subspace size: 1640
+step: 7, current subspace size: 1640, maximum subspace size: 1640
+step: 8, current subspace size: 440, maximum subspace size: 1640
+step: 9, current subspace size: 640, maximum subspace size: 1640
+step: 10, current subspace size: 840, maximum subspace size: 1640
+step: 11, current subspace size: 1040, maximum subspace size: 1640
+step: 12, current subspace size: 1240, maximum subspace size: 1640
+step: 13, current subspace size: 1440, maximum subspace size: 1640
+step: 14, current subspace size: 1640, maximum subspace size: 1640
+step: 15, current subspace size: 440, maximum subspace size: 1640
+step: 16, current subspace size: 640, maximum subspace size: 1640
+step: 17, current subspace size: 840, maximum subspace size: 1640
+step: 18, current subspace size: 1040, maximum subspace size: 1640
+step: 19, current subspace size: 1240, maximum subspace size: 1640
+step: 20, current subspace size: 1440, maximum subspace size: 1640
+ik :  2,    -3.948053   -3.948053   -2.590248   -2.590247   -2.590193   -2.590182   -2.590165   -2.590099   -0.337799   -0.337763
+ik :  3,    -3.948053   -3.948053   -2.590244   -2.590242   -2.590218   -2.590216   -2.590211   -2.590202   -0.337830   -0.337766
+ik :  4,    -3.948053   -3.948053   -2.590250   -2.590248   -2.590203   -2.590191   -2.590164   -2.590162   -0.338574   -0.338189
+ik :  5,    -3.948054   -3.948054   -2.590250   -2.590248   -2.590219   -2.590215   -2.590213   -2.590165   -0.337843   -0.337817
+ik :  6,    -3.948053   -3.948053   -2.590250   -2.590248   -2.590224   -2.590220   -2.590209   -2.590164   -0.337910   -0.337764
+ik :  7,    -3.948053   -3.948053   -2.590247   -2.590246   -2.590213   -2.590198   -2.590192   -2.590178   -0.337774   -0.337752
+
+Charges and magnetic moments
+--------------------------------------------------------------------------------
+atom      charge    core leakage
+--------------------------------------------------------------------------------
+   0   27.541593  6.55719278e-13
+   1   27.541593  6.55719278e-13
+
+total core leakage    : 1.31143856e-12
+interstitial charge   :   0.916813
+total charge          :  56.000000
+
+Energy
+--------------------------------------------------------------------------------
+valence_eval_sum          :       -53.62813859
+core_eval_sum             :     -1703.11184157
+kinetic energy            :      2982.71410654
+enuc                      :     -3640.60881158
+<rho|V^{XC}>              :      -164.07042014
+<rho|E^{XC}>              :      -123.92517875
+<mag|B^{XC}>              :         0.00000000
+<rho|V^{H}>               :     -4558.42586977
+Total energy              :     -3061.03281868 (Ha),     -6122.06563735 (Ry)
+
+band gap (eV) :         3.53473126
+Efermi        :        -0.31035156
+
+iteration :   0, RMS 4.608667469235E-02, energy difference : -3.077991589826E+03
+
++------------------------------+
+| SCF iteration   1 out of 200 |
++------------------------------+
+
+Linearization energies
+Atom : Ni, class id : 0
+augmented waves
+local orbitals
+n =  3   l =  0   order = 0   enu =    -3.117767  +
+n =  3   l =  0   order = 1   enu =    -3.117767  +
+n =  3   l =  1   order = 0   enu =    -1.786879  +
+n =  3   l =  1   order = 1   enu =    -1.786879  +
+n =  3   l =  2   order = 0   enu =     0.377461  +
+n =  3   l =  2   order = 1   enu =     0.377461  +
+n =  4   l =  0   order = 0   enu =     0.986726  +
+n =  4   l =  0   order = 1   enu =     0.986726  +
+
+smallest eigen-value of the singular components:   0.0000044860455656
+iterative solver tolerance:     0.000000000000
+step: 0, current subspace size: 240, maximum subspace size: 1640
+step: 1, current subspace size: 440, maximum subspace size: 1640
+step: 2, current subspace size: 640, maximum subspace size: 1640
+step: 3, current subspace size: 840, maximum subspace size: 1640
+step: 4, current subspace size: 1040, maximum subspace size: 1640
+step: 5, current subspace size: 1240, maximum subspace size: 1640
+step: 6, current subspace size: 1440, maximum subspace size: 1640
+step: 7, current subspace size: 1640, maximum subspace size: 1640
+step: 8, current subspace size: 440, maximum subspace size: 1640
+step: 9, current subspace size: 640, maximum subspace size: 1640
+step: 10, current subspace size: 840, maximum subspace size: 1640
+step: 11, current subspace size: 1040, maximum subspace size: 1640
+step: 12, current subspace size: 1240, maximum subspace size: 1640
+step: 13, current subspace size: 1440, maximum subspace size: 1640
+step: 14, current subspace size: 1640, maximum subspace size: 1640
+step: 15, current subspace size: 440, maximum subspace size: 1640
+step: 16, current subspace size: 640, maximum subspace size: 1640
+step: 17, current subspace size: 840, maximum subspace size: 1640
+step: 18, current subspace size: 1040, maximum subspace size: 1640
+step: 19, current subspace size: 1240, maximum subspace size: 1640
+step: 20, current subspace size: 1440, maximum subspace size: 1640
+step: 21, current subspace size: 1640, maximum subspace size: 1640
+step: 22, current subspace size: 440, maximum subspace size: 1640
+step: 23, current subspace size: 640, maximum subspace size: 1640
+step: 24, current subspace size: 840, maximum subspace size: 1640
+step: 25, current subspace size: 1040, maximum subspace size: 1640
+step: 26, current subspace size: 1240, maximum subspace size: 1640
+step: 27, current subspace size: 1440, maximum subspace size: 1640
+step: 28, current subspace size: 1640, maximum subspace size: 1640
+step: 29, current subspace size: 440, maximum subspace size: 1640
+step: 30, current subspace size: 640, maximum subspace size: 1640
+step: 31, current subspace size: 840, maximum subspace size: 1640
+Lowest band energies
+ik :  0,    -3.117197   -3.117057   -1.784531   -1.784521   -1.784519   -1.784509   -1.784508   -1.784506   -0.072560   -0.057381
+ik :  1,    -3.117061   -3.117052   -1.784518   -1.784516   -1.784510   -1.784508   -1.784498   -1.784495   -0.065268   -0.065267
+ik :  2,    -3.117054   -3.117052   -1.784517   -1.784516   -1.784507   -1.784506   -1.784503   -1.784499   -0.065267   -0.065267
+ik :  3,    -3.117054   -3.117053   -1.784513   -1.784512   -1.784509   -1.784507   -1.784503   -1.784502   -0.063860   -0.063860
+ik :  4,    -4.011546   -3.117055   -3.115926   -1.784515   -1.784514   -1.784510   -1.784508   -1.784505   -1.784470   -0.064490
+ik :  5,    -3.117080   -3.117057   -1.784519   -1.784517   -1.784509   -1.784508   -1.784505   -1.784499   -0.063173   -0.063168
+ik :  6,    -3.117054   -3.117054   -1.784518   -1.784517   -1.784507   -1.784507   -1.784506   -1.784505   -0.063169   -0.063169
+ik :  7,    -3.117053   -3.117052   -1.784516   -1.784515   -1.784507   -1.784505   -1.784502   -1.784501   -0.062172   -0.062171
+
+=== Warning at line 1014 of file /global/cscratch1/sd/zhang714/install_sirius_2019_08_22/SIRIUS-develop/src/Density/density.cpp ===
+wrong number of electrons
+  obtained value : 56.0001
+  target value : 56
+  difference : 5.57794e-05
+  total core leakage : 1.14402e-12
+    atom class : 0, core leakage : 5.7201e-13
+
+
+Charges and magnetic moments
+--------------------------------------------------------------------------------
+atom      charge    core leakage
+--------------------------------------------------------------------------------
+   0   18.492576  5.72010434e-13
+   1   18.492576  5.72010434e-13
+
+total core leakage    : 1.14402087e-12
+interstitial charge   :  19.014905
+total charge          :  56.000056
+
+Energy
+--------------------------------------------------------------------------------
+valence_eval_sum          :       -34.78691137
+core_eval_sum             :     -1679.42607061
+kinetic energy            :      2849.21760078
+enuc                      :     -3312.82771247
+<rho|V^{XC}>              :      -233.12875858
+<rho|E^{XC}>              :      -175.56832808
+<mag|B^{XC}>              :         0.00000000
+<rho|V^{H}>               :    -98887.68728010
+Total energy              :    -50083.02207982 (Ha),   -100166.04415965 (Ry)
+
+band gap (eV) :         0.00000000
+Efermi        :         0.05489159
+
+iteration :   1, RMS 4.094241008240E+02, energy difference : 4.761750287542E+04
+
++------------------------------+
+| SCF iteration   2 out of 200 |
++------------------------------+
+
+Linearization energies
+Atom : Ni, class id : 0
+augmented waves
+local orbitals
+n =  3   l =  0   order = 0   enu =    -3.117767
+n =  3   l =  0   order = 1   enu =    -3.117767
+n =  3   l =  1   order = 0   enu =    -1.786879
+n =  3   l =  1   order = 1   enu =    -1.786879
+n =  3   l =  2   order = 0   enu =     0.377461
+n =  3   l =  2   order = 1   enu =     0.377461
+n =  4   l =  0   order = 0   enu =     0.986726
+n =  4   l =  0   order = 1   enu =     0.986726
+
+smallest eigen-value of the singular components:   0.0000021686589846
+iterative solver tolerance:     0.000000000000
+step: 0, current subspace size: 240, maximum subspace size: 1640
+step: 1, current subspace size: 440, maximum subspace size: 1640
+step: 2, current subspace size: 640, maximum subspace size: 1640
+step: 3, current subspace size: 840, maximum subspace size: 1640
+step: 4, current subspace size: 1040, maximum subspace size: 1640
+step: 5, current subspace size: 1240, maximum subspace size: 1640
+step: 21, current subsstep: 21, current subsstep: 21, current subsstep: 21, current subsstep: 21, current subsstep: 21, current subsstep: 6, current subspace size: 1440, maximum subspacestep: 21, current subs
