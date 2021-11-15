@@ -25,7 +25,7 @@
         "core_relativity" : "none",
         "num_fv_states" : 200,
         "!aw_cutoff" : 5,
-	"gk_cutoff" : 7.75,
+	"gk_cutoff" : 8.50,
         "pw_cutoff" : 20.00,
         "auto_rmt" : 1,
         "use_symmetry": true,
