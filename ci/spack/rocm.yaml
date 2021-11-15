@@ -1,0 +1,12 @@
+spack:
+  specs:
+    - sirius@develop %gcc +vdwxc +tests +apps +rocm ^spfft +rocm ^openmpi ^openblas
+  view: false
+
+  packages:
+    all:
+      target: [x86_64]
+      variants:
+        - 'build_type=Release'
+        - '+release'
+        - 'amdgpu_target=gfx906'

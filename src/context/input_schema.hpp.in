@@ -1,0 +1,9 @@
+namespace sirius {
+
+#pragma once
+const nlohmann::json input_schema = R"schema(
+@SIRIUS_INPUT_SCHEMA@
+)schema"_json;
+
+}
+

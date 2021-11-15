@@ -1,0 +1,13 @@
+spack:
+  specs:
+    - sirius@develop %gcc +vdwxc +tests +apps build_type=RelWithDebInfo +elpa ^openblas %gcc ^mpich
+    - sirius@develop %gcc +vdwxc +tests +apps build_type=RelWithDebInfo +elpa ^openblas %gcc ^openmpi
+    - sirius@develop %clang +tests +apps build_type=RelWithDebInfo ^openblas ^mpich ~fortran
+  view: false
+
+  packages:
+    all:
+      target: [x86_64]
+      variants:
+        - 'build_type=Release'
+        - '+release'

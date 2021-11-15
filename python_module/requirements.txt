@@ -1,0 +1,7 @@
+numpy
+scipy
+matplotlib
+mpi4py
+ipython
+pyyaml
+voluptuous

@@ -1,0 +1,17 @@
+name: Check formatting of modified files
+
+on:
+  push:
+    branches: ['master', 'develop', '!trying', '!staging']
+  pull_request:
+    branches: ['master', 'develop']
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - name: Check .cpp, .h and .hpp files
+        run: ./check_format.x
