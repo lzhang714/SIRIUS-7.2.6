@@ -23,7 +23,7 @@
         "smearing_width" : 0.001,
         "valence_relativity" : "none",
         "core_relativity" : "none",
-        "num_fv_states" : 500,
+        "num_fv_states" : 900,
         "aw_cutoff" : 4,
         "pw_cutoff" : 16.00,
         "auto_rmt" : 0,
