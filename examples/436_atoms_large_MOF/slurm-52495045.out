@@ -1,0 +1,63 @@
+Rank 17 [Thu Dec 30 00:38:52 2021] [c3-0c0s13n0] Fatal error in PMPI_Wait: Request pending due to failure, error stack:
+PMPI_Wait(207): MPI_Wait(request=0x7fffffff0294, status=0x7fffffff0280) failed
+PMPI_Wait(158): Invalid MPI_Request
+Rank 16 [Thu Dec 30 00:38:52 2021] [c3-0c0s12n3] Fatal error in PMPI_Wait: Request pending due to failure, error stack:
+PMPI_Wait(207): MPI_Wait(request=0x7fffffff0294, status=0x7fffffff0280) failed
+PMPI_Wait(158): Invalid MPI_Request
+Rank 12 [Thu Dec 30 00:38:52 2021] [c3-0c0s10n0] Fatal error in PMPI_Wait: Request pending due to failure, error stack:
+PMPI_Wait(207): MPI_Wait(request=0x7fffffff0294, status=0x7fffffff0280) failed
+PMPI_Wait(158): Invalid MPI_Request
+Rank 13 [Thu Dec 30 00:38:52 2021] [c3-0c0s12n0] Fatal error in PMPI_Wait: Request pending due to failure, error stack:
+PMPI_Wait(207): MPI_Wait(request=0x7fffffff0294, status=0x7fffffff0280) failed
+PMPI_Wait(158): Invalid MPI_Request
+Rank 14 [Thu Dec 30 00:38:52 2021] [c3-0c0s12n1] Fatal error in PMPI_Wait: Request pending due to failure, error stack:
+PMPI_Wait(207): MPI_Wait(request=0x7fffffff0294, status=0x7fffffff0280) failed
+PMPI_Wait(158): Invalid MPI_Request
+Rank 15 [Thu Dec 30 00:38:52 2021] [c3-0c0s12n2] Fatal error in PMPI_Wait: Request pending due to failure, error stack:
+PMPI_Wait(207): MPI_Wait(request=0x7fffffff0294, status=0x7fffffff0280) failed
+PMPI_Wait(158): Invalid MPI_Request
+srun: error: nid00628: task 17: Aborted
+srun: launch/slurm: _step_signal: Terminating StepId=52495045.0
+srun: error: nid00626: task 15: Aborted
+srun: error: nid00616: task 12: Aborted
+srun: error: nid00624: task 13: Aborted
+srun: error: nid00627: task 16: Aborted
+slurmstepd: error: *** STEP 52495045.0 ON nid00604 CANCELLED AT 2021-12-30T00:38:55 ***
+srun: error: nid00715: task 26: Terminated
+srun: error: nid00606: task 2: Terminated
+srun: error: nid00716: task 27: Terminated
+srun: error: nid00679: task 23: Terminated
+srun: error: nid00609: task 5: Terminated
+srun: error: nid00604: task 0: Terminated
+srun: error: nid00607: task 3: Terminated
+srun: error: nid00677: task 21: Terminated
+srun: error: nid00693: task 25: Terminated
+srun: error: nid00611: task 7: Terminated
+srun: error: nid00759: task 31: Terminated
+srun: error: nid00615: task 11: Terminated
+srun: error: nid12833: task 33: Terminated
+srun: error: nid00727: task 28: Terminated
+srun: error: nid00612: task 8: Terminated
+srun: error: nid00614: task 10: Terminated
+srun: error: nid00678: task 22: Terminated
+srun: error: nid00665: task 19: Terminated
+srun: error: nid00629: task 18: Terminated
+srun: error: nid00728: task 29: Terminated
+srun: error: nid00676: task 20: Terminated
+srun: error: nid00608: task 4: Terminated
+srun: error: nid00610: task 6: Terminated
+srun: error: nid00680: task 24: Terminated
+srun: error: nid00613: task 9: Terminated
+srun: error: nid00605: task 1: Terminated
+srun: error: nid12832: task 32: Terminated
+srun: error: nid13012: task 34: Terminated
+srun: error: nid00740: task 30: Terminated
+srun: error: nid13013: task 35: Terminated
+srun: error: nid00625: task 14: Aborted (core dumped)
+srun: Force Terminated StepId=52495045.0
+ 
+ ================================================= 
+ The job is done in time.                          
+ Time used for execution: 12 min 28 sec 
+ ================================================= 
+ 
