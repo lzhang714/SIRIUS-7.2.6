@@ -2,7 +2,7 @@
 #SBATCH --constraint=haswell
 #SBATCH --partition=debug
 #SBATCH --account=mp261
-#SBATCH --time=00:10:00
+#SBATCH --time=00:30:00
 #SBATCH --nodes=36
 #SBATCH --ntasks-per-node=1
 #SBATCH --job-name=Fe4MOF436
