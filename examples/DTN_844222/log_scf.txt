@@ -1,0 +1,3531 @@
+Warning! Required level of thread support is not provided.
+provided: 2 
+required: 3
+SIRIUS 7.3.1, git hash: fdef0926ef0e447a369a8fb8002e1d8b791acd5d
+
+=== Warning at line 114 of file /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/context/simulation_parameters.cpp ===
+The following configuration parameters were not recognized and ignored: gen_evp_solver_type std_evp_solver_type 
+
+
+=== Warning at line 114 of file /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/context/simulation_parameters.cpp ===
+The following configuration parameters were not recognized and ignored: !linear_mix_rms_tol 
+
+
+=== Warning at line 114 of file /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/context/simulation_parameters.cpp ===
+The following configuration parameters were not recognized and ignored: potential_tol !lmax_apw !xc_functionals 
+
+
+=== Warning at line 114 of file /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/context/simulation_parameters.cpp ===
+The following configuration parameters were not recognized and ignored: kpoints_path kpoints_rel 
+
+
+SIRIUS version : 7.3.1
+git hash       : fdef0926ef0e447a369a8fb8002e1d8b791acd5d
+git branch     : heads/develop
+build time     : 2022-02-22 11:37:01
+start time     : Thu, 24 Feb 2022 00:06:23
+
+number of MPI ranks           : 32
+MPI grid                      : 2 2
+maximum number of OMP threads : 16
+number of MPI ranks per node  : 2
+page size (Kb)                : 4
+number of pages               : 32973769
+available memory (GB)         : 125
+
+FFT context for density and potential
+=====================================
+  comm size                             : 32
+  plane wave cutoff                     : 30.000000
+  grid size                             : 180 180 180   total : 5832000
+  grid limits                           : -89 90   -89 90   -89 90
+  number of G-vectors within the cutoff : 2521669
+  local number of G-vectors             : 78821
+  number of G-shells                    : 323681
+
+FFT context for coarse grid
+=====================================
+  comm size                             : 4
+  plane wave cutoff                     : 19.060153
+  grid size                             : 120 120 108   total : 1555200
+  grid limits                           : -59 60   -59 60   -53 54
+  number of G-vectors within the cutoff : 646415
+  local number of G-vectors             : 20204
+  number of G-shells                    : 84232
+
+number of local G-vector blocks: 17
+
+Unit cell
+--------------------------------------------------------------------------------
+lattice vectors
+  a1 :      18.1096316167       0.0000000000       0.0000000000 
+  a2 :       0.0000000000      18.1095149104       0.0000000000 
+  a3 :       0.0000000000       0.0000000000      16.8615051111 
+reciprocal lattice vectors
+  b1 :       0.3469526846       0.0000000000       0.0000000000 
+  b2 :       0.0000000000       0.3469549206       0.0000000000 
+  b3 :       0.0000000000       0.0000000000       0.3726349022 
+
+unit cell volume :      5529.84262539 [a.u.^3]
+1/sqrt(omega)    :         0.01344756
+MT volume        : 80.709696 ( 1.46%)
+IT volume        : 5449.132929 (98.54%)
+
+number of atom types : 6
+type id : 0   symbol :  H   mt_radius :   0.650000, num_atoms: 32
+type id : 1   symbol :  C   mt_radius :   0.650000, num_atoms: 8
+type id : 2   symbol :  S   mt_radius :   0.559862, num_atoms: 8
+type id : 3   symbol :  N   mt_radius :   0.650000, num_atoms: 16
+type id : 4   symbol : Cl   mt_radius :   0.524655, num_atoms: 4
+type id : 5   symbol : Ni   mt_radius :   0.984332, num_atoms: 2
+total number of atoms : 70
+number of symmetry classes : 70
+
+atom id              position                    vector_field        type id    class id
+----------------------------------------------------------------------------------------
+     0      0.347741 0.012285 0.533198   0.000000 0.000000 0.000000        0           0
+     1      0.152262 0.487716 0.033200   0.000000 0.000000 0.000000        0           1
+     2      0.987712 0.347735 0.533200   0.000000 0.000000 0.000000        0           2
+     3      0.512282 0.152261 0.033202   0.000000 0.000000 0.000000        0           3
+     4      0.221095 0.996361 0.392243   0.000000 0.000000 0.000000        0           4
+     5      0.278911 0.503644 0.892249   0.000000 0.000000 0.000000        0           5
+     6      0.003645 0.221090 0.392249   0.000000 0.000000 0.000000        0           6
+     7      0.496357 0.278907 0.892250   0.000000 0.000000 0.000000        0           7
+     8      0.214966 0.794119 0.240915   0.000000 0.000000 0.000000        0           8
+     9      0.285043 0.705881 0.740917   0.000000 0.000000 0.000000        0           9
+    10      0.205880 0.214965 0.240923   0.000000 0.000000 0.000000        0          10
+    11      0.294122 0.285040 0.740920   0.000000 0.000000 0.000000        0          11
+    12      0.330931 0.657804 0.283787   0.000000 0.000000 0.000000        0          12
+    13      0.169077 0.842194 0.783790   0.000000 0.000000 0.000000        0          13
+    14      0.342191 0.330930 0.283796   0.000000 0.000000 0.000000        0          14
+    15      0.157808 0.169077 0.783793   0.000000 0.000000 0.000000        0          15
+    16      0.847742 0.512286 0.033199   0.000000 0.000000 0.000000        0          16
+    17      0.652264 0.987716 0.533199   0.000000 0.000000 0.000000        0          17
+    18      0.487718 0.847738 0.033198   0.000000 0.000000 0.000000        0          18
+    19      0.012281 0.652260 0.533199   0.000000 0.000000 0.000000        0          19
+    20      0.721099 0.496360 0.892246   0.000000 0.000000 0.000000        0          20
+    21      0.778912 0.003645 0.392245   0.000000 0.000000 0.000000        0          21
+    22      0.503644 0.721092 0.892246   0.000000 0.000000 0.000000        0          22
+    23      0.996358 0.778906 0.392246   0.000000 0.000000 0.000000        0          23
+    24      0.714964 0.294123 0.740916   0.000000 0.000000 0.000000        0          24
+    25      0.785036 0.205884 0.240920   0.000000 0.000000 0.000000        0          25
+    26      0.705882 0.714959 0.740914   0.000000 0.000000 0.000000        0          26
+    27      0.794123 0.785034 0.240918   0.000000 0.000000 0.000000        0          27
+    28      0.830926 0.157807 0.783789   0.000000 0.000000 0.000000        0          28
+    29      0.669070 0.342198 0.283792   0.000000 0.000000 0.000000        0          29
+    30      0.842196 0.830924 0.783788   0.000000 0.000000 0.000000        0          30
+    31      0.657805 0.669071 0.283790   0.000000 0.000000 0.000000        0          31
+    32      0.347132 0.824892 0.422596   0.000000 0.000000 0.000000        1          32
+    33      0.152866 0.675111 0.922596   0.000000 0.000000 0.000000        1          33
+    34      0.175110 0.347137 0.422600   0.000000 0.000000 0.000000        1          34
+    35      0.324885 0.152864 0.922599   0.000000 0.000000 0.000000        1          35
+    36      0.847135 0.324889 0.922597   0.000000 0.000000 0.000000        1          36
+    37      0.652867 0.175109 0.422598   0.000000 0.000000 0.000000        1          37
+    38      0.675115 0.847133 0.922592   0.000000 0.000000 0.000000        1          38
+    39      0.824888 0.652866 0.422596   0.000000 0.000000 0.000000        1          39
+    40      0.972605 0.251417 0.035608   0.000000 0.000000 0.000000        2          40
+    41      0.027391 0.748581 0.035605   0.000000 0.000000 0.000000        2          41
+    42      0.748583 0.972607 0.035604   0.000000 0.000000 0.000000        2          42
+    43      0.251413 0.027396 0.035610   0.000000 0.000000 0.000000        2          43
+    44      0.472601 0.751418 0.535611   0.000000 0.000000 0.000000        2          44
+    45      0.527391 0.248579 0.535611   0.000000 0.000000 0.000000        2          45
+    46      0.248576 0.472608 0.535613   0.000000 0.000000 0.000000        2          46
+    47      0.751412 0.527397 0.535614   0.000000 0.000000 0.000000        2          47
+    48      0.301859 0.954214 0.451922   0.000000 0.000000 0.000000        3          48
+    49      0.198144 0.545784 0.951923   0.000000 0.000000 0.000000        3          49
+    50      0.045776 0.301854 0.451927   0.000000 0.000000 0.000000        3          50
+    51      0.454217 0.198143 0.951929   0.000000 0.000000 0.000000        3          51
+    52      0.292566 0.754941 0.307248   0.000000 0.000000 0.000000        3          52
+    53      0.207436 0.745061 0.807247   0.000000 0.000000 0.000000        3          53
+    54      0.245063 0.292569 0.307254   0.000000 0.000000 0.000000        3          54
+    55      0.254941 0.207433 0.807252   0.000000 0.000000 0.000000        3          55
+    56      0.801858 0.454216 0.951926   0.000000 0.000000 0.000000        3          56
+    57      0.698144 0.045788 0.451923   0.000000 0.000000 0.000000        3          57
+    58      0.545784 0.801856 0.951924   0.000000 0.000000 0.000000        3          58
+    59      0.954215 0.698139 0.451926   0.000000 0.000000 0.000000        3          59
+    60      0.792568 0.254939 0.807248   0.000000 0.000000 0.000000        3          60
+    61      0.707433 0.245060 0.307250   0.000000 0.000000 0.000000        3          61
+    62      0.745063 0.792566 0.807248   0.000000 0.000000 0.000000        3          62
+    63      0.754944 0.707431 0.307251   0.000000 0.000000 0.000000        3          63
+    64      0.000000 1.000000 0.732720   0.000000 0.000000 0.000000        4          64
+    65      0.999999 0.999997 0.287706   0.000000 0.000000 0.000000        4          65
+    66      0.499994 0.499999 0.232740   0.000000 0.000000 0.000000        4          66
+    67      0.499997 0.499998 0.787709   0.000000 0.000000 0.000000        4          67
+    68      0.999997 0.999999 0.003007   0.000000 0.000000 -4.000000        5          68
+    69      0.499992 0.500000 0.503016   0.000000 0.000000 4.000000        5          69
+
+class id : 0   atom id : 0 
+class id : 1   atom id : 1 
+class id : 2   atom id : 2 
+class id : 3   atom id : 3 
+class id : 4   atom id : 4 
+class id : 5   atom id : 5 
+class id : 6   atom id : 6 
+class id : 7   atom id : 7 
+class id : 8   atom id : 8 
+class id : 9   atom id : 9 
+class id : 10   atom id : 10 
+class id : 11   atom id : 11 
+class id : 12   atom id : 12 
+class id : 13   atom id : 13 
+class id : 14   atom id : 14 
+class id : 15   atom id : 15 
+class id : 16   atom id : 16 
+class id : 17   atom id : 17 
+class id : 18   atom id : 18 
+class id : 19   atom id : 19 
+class id : 20   atom id : 20 
+class id : 21   atom id : 21 
+class id : 22   atom id : 22 
+class id : 23   atom id : 23 
+class id : 24   atom id : 24 
+class id : 25   atom id : 25 
+class id : 26   atom id : 26 
+class id : 27   atom id : 27 
+class id : 28   atom id : 28 
+class id : 29   atom id : 29 
+class id : 30   atom id : 30 
+class id : 31   atom id : 31 
+class id : 32   atom id : 32 
+class id : 33   atom id : 33 
+class id : 34   atom id : 34 
+class id : 35   atom id : 35 
+class id : 36   atom id : 36 
+class id : 37   atom id : 37 
+class id : 38   atom id : 38 
+class id : 39   atom id : 39 
+class id : 40   atom id : 40 
+class id : 41   atom id : 41 
+class id : 42   atom id : 42 
+class id : 43   atom id : 43 
+class id : 44   atom id : 44 
+class id : 45   atom id : 45 
+class id : 46   atom id : 46 
+class id : 47   atom id : 47 
+class id : 48   atom id : 48 
+class id : 49   atom id : 49 
+class id : 50   atom id : 50 
+class id : 51   atom id : 51 
+class id : 52   atom id : 52 
+class id : 53   atom id : 53 
+class id : 54   atom id : 54 
+class id : 55   atom id : 55 
+class id : 56   atom id : 56 
+class id : 57   atom id : 57 
+class id : 58   atom id : 58 
+class id : 59   atom id : 59 
+class id : 60   atom id : 60 
+class id : 61   atom id : 61 
+class id : 62   atom id : 62 
+class id : 63   atom id : 63 
+class id : 64   atom id : 64 
+class id : 65   atom id : 65 
+class id : 66   atom id : 66 
+class id : 67   atom id : 67 
+class id : 68   atom id : 68 
+class id : 69   atom id : 69 
+
+atom id              position (Cartesian, a.u.)
+----------------------------------------------------------------------------------------
+     0          6.297461020575     0.222480709840     8.990517760114
+     1          2.757407614933     8.832293191567     0.559800973025
+     2         17.887104721531     6.297305945791     8.990550165756
+     3          9.277238932544     2.757381754111     0.559829904301
+     4          4.003957035280    18.043610169815     6.613805982215
+     5          5.050969354642     9.120751863914    15.044656282451
+     6          0.066001604572     4.003826856846     6.613907369251
+     7          8.988843832768     5.050863402212    15.044680552435
+     8          3.892952505010    14.381115402643     4.062196452651
+     9          5.162025824343    12.783158581308    12.492982736604
+    10          3.728408654949     3.892904546568     4.062325599724
+    11          5.326449933884     5.161931439350    12.493026085234
+    12          5.993032576912    11.912513971353     4.785082923636
+    13          3.061925764221    15.251717241262    13.215882736691
+    14          6.196957864242     5.992983076999     4.785222943098
+    15          2.857839517387     3.061899668737    13.215930381503
+    16         15.352300428058     9.277259692957     0.559791446678
+    17         11.812263131516    17.887048878932     8.990545951257
+    18          8.832396828954    15.352117938317     0.559772833151
+    19          0.222411722523    11.812112484716     8.990543485940
+    20         13.058834885757     8.988837007655    15.044614417550
+    21         14.105815929423     0.066017661889     6.613841851829
+    22          9.120808908936    13.058625099550    15.044615986966
+    23         18.043668322398    14.105601411932     6.613860582753
+    24         12.947736417806     5.326416624545    12.492961751573
+    25         14.216713438496     3.728455341327     4.062267478085
+    26         12.783268687237    12.947562663377    12.492921271645
+    27         14.381266872786    14.216585838113     4.062236599337
+    28         15.047764580928     2.857814359085    13.215862948414
+    29         12.116614640110     6.197038629260     4.785167722837
+    30         15.251855362844    15.047632257736    13.215847038627
+    31         11.912612716823    12.116557879675     4.785126027632
+    32          6.286440656235    14.938394832033     7.125605752371
+    33          2.768339978403    12.225933620201    15.556359066611
+    34          3.171180301269     6.286490465678     7.125679511615
+    35          5.883539551034     2.768284527913    15.556413692491
+    36         15.341309407856     5.883577994459    15.556367601349
+    37         11.823176760597     3.171131907916     7.125640641644
+    38         12.226085076253    15.341173157803    15.556291720305
+    39         14.938413206960    11.823079777662     7.125612373506
+    40         17.613518526476     4.553036179027     0.600404802296
+    41          0.496044175054    13.556440317943     0.600361618595
+    42         13.556557978231    17.613432736914     0.600345175534
+    43          4.552999095169     0.496127601517     0.600445593148
+    44          8.558632795777    13.607823002017     9.031208483965
+    45          9.550856269219     4.501639387387     9.031210228330
+    46          4.501617497781     8.558705592948     9.031248304301
+    47         13.607795518079     9.550908619136     9.031249794831
+    48          5.466561267123    17.280359418433     7.620088884195
+    49          3.588319486594     9.883892166358    16.050854177859
+    50          0.828977887132     5.466431525972     7.620163406035
+    51          8.225699854069     3.588272309027    16.050960838606
+    52          5.298265960147    13.671609329312     5.180665996217
+    53          3.756582223002    13.492700553236    13.611404072299
+    54          4.437999638455     5.298276703640     5.180771235345
+    55          4.616878962055     3.756511331339    13.611483618956
+    56         14.521347344447     8.225634261957    16.050897855658
+    57         12.643134820903     0.829195449267     7.620104407536
+    58          9.883939224620    14.521231990344    16.050869093407
+    59         17.280480231919    12.642956581591     7.620160124069
+    60         14.353111080170     4.616821568425    13.611409967264
+    61         12.811344540474     4.437919433775     5.180694910403
+    62         13.492810047805    14.352987327323    13.611421401893
+    63         13.671760000728    12.811235044590     5.180708907613
+    64          0.000007575319    18.109512798219    12.354762608335
+    65         18.109616065298    18.109468183362     4.851148996739
+    66          9.054705282677     9.054745609058     3.924342678581
+    67          9.054762416939     9.054726207885    13.281967268120
+    68         18.109580313788    18.109504363432     0.050709429458
+    69          9.054668302882     9.054748631782     8.481603501699
+
+class id : 0   atom id : 0 
+class id : 1   atom id : 1 
+class id : 2   atom id : 2 
+class id : 3   atom id : 3 
+class id : 4   atom id : 4 
+class id : 5   atom id : 5 
+class id : 6   atom id : 6 
+class id : 7   atom id : 7 
+class id : 8   atom id : 8 
+class id : 9   atom id : 9 
+class id : 10   atom id : 10 
+class id : 11   atom id : 11 
+class id : 12   atom id : 12 
+class id : 13   atom id : 13 
+class id : 14   atom id : 14 
+class id : 15   atom id : 15 
+class id : 16   atom id : 16 
+class id : 17   atom id : 17 
+class id : 18   atom id : 18 
+class id : 19   atom id : 19 
+class id : 20   atom id : 20 
+class id : 21   atom id : 21 
+class id : 22   atom id : 22 
+class id : 23   atom id : 23 
+class id : 24   atom id : 24 
+class id : 25   atom id : 25 
+class id : 26   atom id : 26 
+class id : 27   atom id : 27 
+class id : 28   atom id : 28 
+class id : 29   atom id : 29 
+class id : 30   atom id : 30 
+class id : 31   atom id : 31 
+class id : 32   atom id : 32 
+class id : 33   atom id : 33 
+class id : 34   atom id : 34 
+class id : 35   atom id : 35 
+class id : 36   atom id : 36 
+class id : 37   atom id : 37 
+class id : 38   atom id : 38 
+class id : 39   atom id : 39 
+class id : 40   atom id : 40 
+class id : 41   atom id : 41 
+class id : 42   atom id : 42 
+class id : 43   atom id : 43 
+class id : 44   atom id : 44 
+class id : 45   atom id : 45 
+class id : 46   atom id : 46 
+class id : 47   atom id : 47 
+class id : 48   atom id : 48 
+class id : 49   atom id : 49 
+class id : 50   atom id : 50 
+class id : 51   atom id : 51 
+class id : 52   atom id : 52 
+class id : 53   atom id : 53 
+class id : 54   atom id : 54 
+class id : 55   atom id : 55 
+class id : 56   atom id : 56 
+class id : 57   atom id : 57 
+class id : 58   atom id : 58 
+class id : 59   atom id : 59 
+class id : 60   atom id : 60 
+class id : 61   atom id : 61 
+class id : 62   atom id : 62 
+class id : 63   atom id : 63 
+class id : 64   atom id : 64 
+class id : 65   atom id : 65 
+class id : 66   atom id : 66 
+class id : 67   atom id : 67 
+class id : 68   atom id : 68 
+class id : 69   atom id : 69 
+
+minimum bond length:       1.916761456202
+
+space group number   : 1
+international symbol : P1
+Hall symbol          : P 1
+space group transformation matrix : 
+    0.000000     0.000000    -1.000000 
+    0.000000    -1.000000     0.000000 
+   -1.000000     0.000000     0.000000 
+space group origin shift : 
+    0.000000     0.000000     0.000000
+number of space group operations  : 1
+number of magnetic group operations : 1
+metric tensor error:     0.000000000000
+rotation matrix error:     0.000000000000
+symmetry operations  : 
+isym : 0
+R :   1   0   0 
+      0   1   0 
+      0   0   1 
+Rc:   1.0000   0.0000   0.0000 
+      0.0000   1.0000   0.0000 
+      0.0000   0.0000   1.0000 
+t :  -0.0000  -0.0000  -0.0000 
+S :   1.0000   0.0000   0.0000 
+      0.0000   1.0000   0.0000 
+      0.0000   0.0000   1.0000 
+proper: 1
+
+
+label          : H
+--------------------------------------------------------------------------------
+symbol         : H
+name           : hydrogen
+zn             : 1
+mass           : 1.007940
+mt_radius      : 0.650000
+num_mt_points  : 1500
+grid_origin    : 0.000000
+grid_name      : exponential
+
+number of core electrons    : 0.000000
+number of valence electrons : 1.000000
+
+atomic levels (n, l, k, occupancy, core)
+1  0  1    1.0000 0
+
+local orbitals
+[{l :  0, n :  1, enu : -0.081883, dme : 0, auto : 1}, {l :  0, n :  1, enu : -0.081883, dme : 1, auto : 1}]
+
+augmented wave basis
+[{l :  0, n :  1, enu : 0.150000, dme : 0, auto : 0}, {l :  0, n :  1, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  1, n :  2, enu : 0.150000, dme : 0, auto : 0}, {l :  1, n :  2, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  2, n :  3, enu : 0.150000, dme : 0, auto : 0}, {l :  2, n :  3, enu : 0.150000, dme : 1, auto : 0}]
+maximum order of aw : 2
+
+total number of radial functions : 7
+lmax of radial functions         : 2
+max. number of radial functions  : 3
+total number of basis functions  : 19
+number of aw basis functions     : 18
+number of lo basis functions     : 1
+lmax_apw                         : 2
+Hubbard correction               : false
+spin-orbit coupling              : false
+
+label          : C
+--------------------------------------------------------------------------------
+symbol         : C
+name           : carbon
+zn             : 6
+mass           : 12.010700
+mt_radius      : 0.650000
+num_mt_points  : 1500
+grid_origin    : 0.000000
+grid_name      : exponential
+
+number of core electrons    : 0.000000
+number of valence electrons : 6.000000
+
+atomic levels (n, l, k, occupancy, core)
+1  0  1    2.0000 0
+2  0  1    2.0000 0
+2  1  1    1.0000 0
+2  1  2    1.0000 0
+
+local orbitals
+[{l :  0, n :  1, enu : -9.947720, dme : 0, auto : 1}, {l :  0, n :  1, enu : -9.947720, dme : 1, auto : 1}]
+[{l :  0, n :  2, enu : -0.312079, dme : 0, auto : 1}, {l :  0, n :  2, enu : -0.312079, dme : 1, auto : 1}]
+[{l :  1, n :  2, enu : -0.002862, dme : 0, auto : 1}, {l :  1, n :  2, enu : -0.002862, dme : 1, auto : 1}]
+
+augmented wave basis
+[{l :  0, n :  1, enu : 0.150000, dme : 0, auto : 0}, {l :  0, n :  1, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  1, n :  2, enu : 0.150000, dme : 0, auto : 0}, {l :  1, n :  2, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  2, n :  3, enu : 0.150000, dme : 0, auto : 0}, {l :  2, n :  3, enu : 0.150000, dme : 1, auto : 0}]
+maximum order of aw : 2
+
+total number of radial functions : 9
+lmax of radial functions         : 2
+max. number of radial functions  : 4
+total number of basis functions  : 23
+number of aw basis functions     : 18
+number of lo basis functions     : 5
+lmax_apw                         : 2
+Hubbard correction               : false
+spin-orbit coupling              : false
+
+label          : S
+--------------------------------------------------------------------------------
+symbol         : S
+name           : sulphur
+zn             : 16
+mass           : 32.065000
+mt_radius      : 0.559862
+num_mt_points  : 1500
+grid_origin    : 0.000000
+grid_name      : exponential
+
+number of core electrons    : 2.000000
+number of valence electrons : 14.000000
+
+atomic levels (n, l, k, occupancy, core)
+1  0  1    2.0000 1
+2  0  1    2.0000 0
+2  1  1    2.0000 0
+2  1  2    4.0000 0
+3  0  1    2.0000 0
+3  1  1    2.0000 0
+3  1  2    2.0000 0
+
+local orbitals
+[{l :  0, n :  2, enu : -7.699940, dme : 0, auto : 1}, {l :  0, n :  2, enu : -7.699940, dme : 1, auto : 1}]
+[{l :  1, n :  2, enu : -5.751260, dme : 0, auto : 1}, {l :  1, n :  2, enu : -5.751260, dme : 1, auto : 1}]
+[{l :  0, n :  3, enu : -0.331268, dme : 0, auto : 1}, {l :  0, n :  3, enu : -0.331268, dme : 1, auto : 1}]
+[{l :  1, n :  3, enu : 0.185129, dme : 0, auto : 1}, {l :  1, n :  3, enu : 0.185129, dme : 1, auto : 1}]
+
+augmented wave basis
+[{l :  0, n :  1, enu : 0.150000, dme : 0, auto : 0}, {l :  0, n :  1, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  1, n :  2, enu : 0.150000, dme : 0, auto : 0}, {l :  1, n :  2, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  2, n :  3, enu : 0.150000, dme : 0, auto : 0}, {l :  2, n :  3, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  3, n :  4, enu : 0.150000, dme : 0, auto : 0}, {l :  3, n :  4, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  4, n :  5, enu : 0.150000, dme : 0, auto : 0}, {l :  4, n :  5, enu : 0.150000, dme : 1, auto : 0}]
+maximum order of aw : 2
+
+total number of radial functions : 14
+lmax of radial functions         : 4
+max. number of radial functions  : 4
+total number of basis functions  : 58
+number of aw basis functions     : 50
+number of lo basis functions     : 8
+lmax_apw                         : 4
+Hubbard correction               : false
+spin-orbit coupling              : false
+
+label          : N
+--------------------------------------------------------------------------------
+symbol         : N
+name           : nitrogen
+zn             : 7
+mass           : 14.006700
+mt_radius      : 0.650000
+num_mt_points  : 1500
+grid_origin    : 0.000000
+grid_name      : exponential
+
+number of core electrons    : 0.000000
+number of valence electrons : 7.000000
+
+atomic levels (n, l, k, occupancy, core)
+1  0  1    2.0000 0
+2  0  1    2.0000 0
+2  1  1    1.0000 0
+2  1  2    2.0000 0
+
+local orbitals
+[{l :  0, n :  1, enu : -14.011500, dme : 0, auto : 1}, {l :  0, n :  1, enu : -14.011500, dme : 1, auto : 1}]
+[{l :  0, n :  2, enu : -0.583285, dme : 0, auto : 1}, {l :  0, n :  2, enu : -0.583285, dme : 1, auto : 1}]
+[{l :  1, n :  2, enu : -0.146827, dme : 0, auto : 1}, {l :  1, n :  2, enu : -0.146827, dme : 1, auto : 1}]
+
+augmented wave basis
+[{l :  0, n :  1, enu : 0.150000, dme : 0, auto : 0}, {l :  0, n :  1, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  1, n :  2, enu : 0.150000, dme : 0, auto : 0}, {l :  1, n :  2, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  2, n :  3, enu : 0.150000, dme : 0, auto : 0}, {l :  2, n :  3, enu : 0.150000, dme : 1, auto : 0}]
+maximum order of aw : 2
+
+total number of radial functions : 9
+lmax of radial functions         : 2
+max. number of radial functions  : 4
+total number of basis functions  : 23
+number of aw basis functions     : 18
+number of lo basis functions     : 5
+lmax_apw                         : 2
+Hubbard correction               : false
+spin-orbit coupling              : false
+
+label          : Cl
+--------------------------------------------------------------------------------
+symbol         : Cl
+name           : chlorine
+zn             : 17
+mass           : 35.453000
+mt_radius      : 0.524655
+num_mt_points  : 1500
+grid_origin    : 0.000000
+grid_name      : exponential
+
+number of core electrons    : 2.000000
+number of valence electrons : 15.000000
+
+atomic levels (n, l, k, occupancy, core)
+1  0  1    2.0000 1
+2  0  1    2.0000 0
+2  1  1    2.0000 0
+2  1  2    4.0000 0
+3  0  1    2.0000 0
+3  1  1    2.0000 0
+3  1  2    3.0000 0
+
+local orbitals
+[{l :  0, n :  2, enu : -9.187990, dme : 0, auto : 1}, {l :  0, n :  2, enu : -9.187990, dme : 1, auto : 1}]
+[{l :  1, n :  2, enu : -7.039980, dme : 0, auto : 1}, {l :  1, n :  2, enu : -7.039980, dme : 1, auto : 1}]
+[{l :  0, n :  3, enu : -0.555790, dme : 0, auto : 1}, {l :  0, n :  3, enu : -0.555790, dme : 1, auto : 1}]
+[{l :  1, n :  3, enu : 0.002256, dme : 0, auto : 1}, {l :  1, n :  3, enu : 0.002256, dme : 1, auto : 1}]
+
+augmented wave basis
+[{l :  0, n :  1, enu : 0.150000, dme : 0, auto : 0}, {l :  0, n :  1, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  1, n :  2, enu : 0.150000, dme : 0, auto : 0}, {l :  1, n :  2, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  2, n :  3, enu : 0.150000, dme : 0, auto : 0}, {l :  2, n :  3, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  3, n :  4, enu : 0.150000, dme : 0, auto : 0}, {l :  3, n :  4, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  4, n :  5, enu : 0.150000, dme : 0, auto : 0}, {l :  4, n :  5, enu : 0.150000, dme : 1, auto : 0}]
+maximum order of aw : 2
+
+total number of radial functions : 14
+lmax of radial functions         : 4
+max. number of radial functions  : 4
+total number of basis functions  : 58
+number of aw basis functions     : 50
+number of lo basis functions     : 8
+lmax_apw                         : 4
+Hubbard correction               : false
+spin-orbit coupling              : false
+
+label          : Ni
+--------------------------------------------------------------------------------
+symbol         : Ni
+name           : nickel
+zn             : 28
+mass           : 58.693400
+mt_radius      : 0.984332
+num_mt_points  : 1500
+grid_origin    : 0.000000
+grid_name      : exponential
+
+number of core electrons    : 10.000000
+number of valence electrons : 18.000000
+
+atomic levels (n, l, k, occupancy, core)
+1  0  1    2.0000 1
+2  0  1    2.0000 1
+2  1  1    2.0000 1
+2  1  2    4.0000 1
+3  0  1    2.0000 0
+3  1  1    2.0000 0
+3  1  2    4.0000 0
+3  2  2    4.0000 0
+3  2  3    4.0000 0
+4  0  1    2.0000 0
+
+local orbitals
+[{l :  0, n :  3, enu : -3.950890, dme : 0, auto : 1}, {l :  0, n :  3, enu : -3.950890, dme : 1, auto : 1}]
+[{l :  1, n :  3, enu : -2.593910, dme : 0, auto : 1}, {l :  1, n :  3, enu : -2.593910, dme : 1, auto : 1}]
+[{l :  2, n :  3, enu : -0.318942, dme : 0, auto : 1}, {l :  2, n :  3, enu : -0.318942, dme : 1, auto : 1}]
+[{l :  0, n :  4, enu : 0.988150, dme : 0, auto : 1}, {l :  0, n :  4, enu : 0.988150, dme : 1, auto : 1}]
+
+augmented wave basis
+[{l :  0, n :  1, enu : 0.150000, dme : 0, auto : 0}, {l :  0, n :  1, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  1, n :  2, enu : 0.150000, dme : 0, auto : 0}, {l :  1, n :  2, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  2, n :  3, enu : 0.150000, dme : 0, auto : 0}, {l :  2, n :  3, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  3, n :  4, enu : 0.150000, dme : 0, auto : 0}, {l :  3, n :  4, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  4, n :  5, enu : 0.150000, dme : 0, auto : 0}, {l :  4, n :  5, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  5, n :  6, enu : 0.150000, dme : 0, auto : 0}, {l :  5, n :  6, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  6, n :  7, enu : 0.150000, dme : 0, auto : 0}, {l :  6, n :  7, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  7, n :  8, enu : 0.150000, dme : 0, auto : 0}, {l :  7, n :  8, enu : 0.150000, dme : 1, auto : 0}]
+[{l :  8, n :  9, enu : 0.150000, dme : 0, auto : 0}, {l :  8, n :  9, enu : 0.150000, dme : 1, auto : 0}]
+maximum order of aw : 2
+
+total number of radial functions : 22
+lmax of radial functions         : 8
+max. number of radial functions  : 4
+total number of basis functions  : 172
+number of aw basis functions     : 162
+number of lo basis functions     : 10
+lmax_apw                         : 8
+Hubbard correction               : false
+spin-orbit coupling              : false
+
+Basic information
+--------------------------------------------------------------------------------
+total nuclear charge               : 444
+number of core electrons           : 44.000000
+number of valence electrons        : 400.000000
+total number of electrons          : 444.000000
+extra charge                       : 0.000000
+total number of aw basis functions : 1932
+total number of lo basis functions : 268
+number of first-variational states : 300
+number of bands                    : 300
+number of spins                    : 2
+number of magnetic dimensions      : 1
+number of spinor components        : 1
+number of spinors per band index   : 2
+lmax_apw                           : 8
+lmax_rho                           : 8
+lmax_pot                           : 8
+lmax_rf                            : 8
+smearing type                      : gaussian
+smearing width                     : 0.001000
+cyclic block size                  : 16
+|G+k| cutoff                       : 9.530076
+symmetry                           : true
+so_correction                      : false
+valence relativity                 : none
+core relativity                    : none
+standard eigen-value solver        : ScaLAPACK
+generalized eigen-value solver     : ScaLAPACK
+processing unit                    : CPU
+
+iterative solver                   : davidson
+number of steps                    : 32
+subspace size                      : 8
+early restart ratio                : 0.50
+precision_wf                       : fp64
+precision_hs                       : fp64
+mixer                              : broyden1
+mixing beta                        : 0.75
+max_history                        : 8
+use_hartree                        : false
+
+spglib version: 1.10.3
+HDF5 version: 1.10.6
+Libxc version: 5.0.0
+
+XC functionals
+==============
+1) XC_LDA_X: Slater exchange
+P. A. M. Dirac, Math. Proc. Cambridge Philos. Soc. 26, 376 (1930) (10.1017/S0305004100016108)
+F. Bloch, Z. Phys. 57, 545 (1929) (10.1007/BF01340281)
+
+2) XC_LDA_C_VWN: Vosko, Wilk & Nusair (VWN5)
+S. H. Vosko, L. Wilk, and M. Nusair, Can. J. Phys. 58, 1200 (1980) (10.1139/p80-159)
+
+
+=== Warning at line 393 of file /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/k_point/k_point.cpp ===
+G+k cutoff (9.53008) is too large for a given lmax (8) and a maximum MT radius (0.984332)
+suggested minimum value for lmax : 10
+
+
+total number of k-points : 8
+--------------------------------------------------------------------------------
+  ik                vk                    weight  num_gkvec   gklo_basis_size
+--------------------------------------------------------------------------------
+   0     0.0000   0.0000   0.0000       0.125000      80979             81247
+   1     0.5000   0.0000   0.0000       0.125000      80774             81042
+   2     0.0000   0.5000   0.0000       0.125000      80774             81042
+   3     0.5000   0.5000   0.0000       0.125000      80748             81016
+   4     0.0000   0.0000   0.5000       0.125000      80780             81048
+   5     0.5000   0.0000   0.5000       0.125000      80832             81100
+   6     0.0000   0.5000   0.5000       0.125000      80832             81100
+   7     0.5000   0.5000   0.5000       0.125000      80696             80964
+[find] density_tol            : 1e-06
+[find] energy_tol             : 1e-06
+[find] itsol_tol (initial)    : 1e-13
+[find] itsol_tol_min          : 1e-13
+[find] num_dft_iter           : 200
+[find] 
+[find] +------------------------------+
+[find] | SCF iteration   0 out of 200|
+[find] +------------------------------+
+[find] 
+
+Linearization energies
+Atom : H, class id : 0
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     1.092979  +
+n =  1   l =  0   order = 1   enu =     1.092979  +
+
+Atom : H, class id : 1
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     1.092823  +
+n =  1   l =  0   order = 1   enu =     1.092823  +
+
+Atom : H, class id : 2
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     1.092669  +
+n =  1   l =  0   order = 1   enu =     1.092669  +
+
+Atom : H, class id : 3
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     1.092715  +
+n =  1   l =  0   order = 1   enu =     1.092715  +
+
+Atom : H, class id : 4
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.143114  +
+n =  1   l =  0   order = 1   enu =     3.143114  +
+
+Atom : H, class id : 5
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.143236  +
+n =  1   l =  0   order = 1   enu =     3.143236  +
+
+Atom : H, class id : 6
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.143086  +
+n =  1   l =  0   order = 1   enu =     3.143086  +
+
+Atom : H, class id : 7
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.143171  +
+n =  1   l =  0   order = 1   enu =     3.143171  +
+
+Atom : H, class id : 8
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.833948  +
+n =  1   l =  0   order = 1   enu =     4.833948  +
+
+Atom : H, class id : 9
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.833960  +
+n =  1   l =  0   order = 1   enu =     4.833960  +
+
+Atom : H, class id : 10
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.834059  +
+n =  1   l =  0   order = 1   enu =     4.834059  +
+
+Atom : H, class id : 11
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.834000  +
+n =  1   l =  0   order = 1   enu =     4.834000  +
+
+Atom : H, class id : 12
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.287318  +
+n =  1   l =  0   order = 1   enu =     4.287318  +
+
+Atom : H, class id : 13
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.287273  +
+n =  1   l =  0   order = 1   enu =     4.287273  +
+
+Atom : H, class id : 14
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.287231  +
+n =  1   l =  0   order = 1   enu =     4.287231  +
+
+Atom : H, class id : 15
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.287270  +
+n =  1   l =  0   order = 1   enu =     4.287270  +
+
+Atom : H, class id : 16
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     1.092915  +
+n =  1   l =  0   order = 1   enu =     1.092915  +
+
+Atom : H, class id : 17
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     1.092796  +
+n =  1   l =  0   order = 1   enu =     1.092796  +
+
+Atom : H, class id : 18
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     1.092681  +
+n =  1   l =  0   order = 1   enu =     1.092681  +
+
+Atom : H, class id : 19
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     1.092773  +
+n =  1   l =  0   order = 1   enu =     1.092773  +
+
+Atom : H, class id : 20
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.143050  +
+n =  1   l =  0   order = 1   enu =     3.143050  +
+
+Atom : H, class id : 21
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.143222  +
+n =  1   l =  0   order = 1   enu =     3.143222  +
+
+Atom : H, class id : 22
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.143176  +
+n =  1   l =  0   order = 1   enu =     3.143176  +
+
+Atom : H, class id : 23
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.143132  +
+n =  1   l =  0   order = 1   enu =     3.143132  +
+
+Atom : H, class id : 24
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.833986  +
+n =  1   l =  0   order = 1   enu =     4.833986  +
+
+Atom : H, class id : 25
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.833816  +
+n =  1   l =  0   order = 1   enu =     4.833816  +
+
+Atom : H, class id : 26
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.834026  +
+n =  1   l =  0   order = 1   enu =     4.834026  +
+
+Atom : H, class id : 27
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.833767  +
+n =  1   l =  0   order = 1   enu =     4.833767  +
+
+Atom : H, class id : 28
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.287255  +
+n =  1   l =  0   order = 1   enu =     4.287255  +
+
+Atom : H, class id : 29
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.287209  +
+n =  1   l =  0   order = 1   enu =     4.287209  +
+
+Atom : H, class id : 30
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.287248  +
+n =  1   l =  0   order = 1   enu =     4.287248  +
+
+Atom : H, class id : 31
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.287208  +
+n =  1   l =  0   order = 1   enu =     4.287208  +
+
+Atom : C, class id : 32
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -4.034845  +
+n =  1   l =  0   order = 1   enu =    -4.034845  +
+n =  2   l =  0   order = 0   enu =    21.283838  +
+n =  2   l =  0   order = 1   enu =    21.283838  +
+n =  2   l =  1   order = 0   enu =    11.034465  +
+n =  2   l =  1   order = 1   enu =    11.034465  +
+
+Atom : C, class id : 33
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -4.034815  +
+n =  1   l =  0   order = 1   enu =    -4.034815  +
+n =  2   l =  0   order = 0   enu =    21.283868  +
+n =  2   l =  0   order = 1   enu =    21.283868  +
+n =  2   l =  1   order = 0   enu =    11.034495  +
+n =  2   l =  1   order = 1   enu =    11.034495  +
+
+Atom : C, class id : 34
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -4.034730  +
+n =  1   l =  0   order = 1   enu =    -4.034730  +
+n =  2   l =  0   order = 0   enu =    21.283953  +
+n =  2   l =  0   order = 1   enu =    21.283953  +
+n =  2   l =  1   order = 0   enu =    11.034580  +
+n =  2   l =  1   order = 1   enu =    11.034580  +
+
+Atom : C, class id : 35
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -4.034734  +
+n =  1   l =  0   order = 1   enu =    -4.034734  +
+n =  2   l =  0   order = 0   enu =    21.283949  +
+n =  2   l =  0   order = 1   enu =    21.283949  +
+n =  2   l =  1   order = 0   enu =    11.034576  +
+n =  2   l =  1   order = 1   enu =    11.034576  +
+
+Atom : C, class id : 36
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -4.034813  +
+n =  1   l =  0   order = 1   enu =    -4.034813  +
+n =  2   l =  0   order = 0   enu =    21.283870  +
+n =  2   l =  0   order = 1   enu =    21.283870  +
+n =  2   l =  1   order = 0   enu =    11.034497  +
+n =  2   l =  1   order = 1   enu =    11.034497  +
+
+Atom : C, class id : 37
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -4.034895  +
+n =  1   l =  0   order = 1   enu =    -4.034895  +
+n =  2   l =  0   order = 0   enu =    21.283788  +
+n =  2   l =  0   order = 1   enu =    21.283788  +
+n =  2   l =  1   order = 0   enu =    11.034415  +
+n =  2   l =  1   order = 1   enu =    11.034415  +
+
+Atom : C, class id : 38
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -4.034735  +
+n =  1   l =  0   order = 1   enu =    -4.034735  +
+n =  2   l =  0   order = 0   enu =    21.283948  +
+n =  2   l =  0   order = 1   enu =    21.283948  +
+n =  2   l =  1   order = 0   enu =    11.034575  +
+n =  2   l =  1   order = 1   enu =    11.034575  +
+
+Atom : C, class id : 39
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -4.034904  +
+n =  1   l =  0   order = 1   enu =    -4.034904  +
+n =  2   l =  0   order = 0   enu =    21.283778  +
+n =  2   l =  0   order = 1   enu =    21.283778  +
+n =  2   l =  1   order = 0   enu =    11.034406  +
+n =  2   l =  1   order = 1   enu =    11.034406  +
+
+Atom : S, class id : 40
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    15.312364  +
+n =  2   l =  0   order = 1   enu =    15.312364  +
+n =  2   l =  1   order = 0   enu =    15.603699  +
+n =  2   l =  1   order = 1   enu =    15.603699  +
+n =  3   l =  0   order = 0   enu =    82.753374  +
+n =  3   l =  0   order = 1   enu =    82.753374  +
+n =  3   l =  1   order = 0   enu =    67.254906  +
+n =  3   l =  1   order = 1   enu =    67.254906  +
+
+Atom : S, class id : 41
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    15.312363  +
+n =  2   l =  0   order = 1   enu =    15.312363  +
+n =  2   l =  1   order = 0   enu =    15.603697  +
+n =  2   l =  1   order = 1   enu =    15.603697  +
+n =  3   l =  0   order = 0   enu =    82.753372  +
+n =  3   l =  0   order = 1   enu =    82.753372  +
+n =  3   l =  1   order = 0   enu =    67.254904  +
+n =  3   l =  1   order = 1   enu =    67.254904  +
+
+Atom : S, class id : 42
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    15.312398  +
+n =  2   l =  0   order = 1   enu =    15.312398  +
+n =  2   l =  1   order = 0   enu =    15.603733  +
+n =  2   l =  1   order = 1   enu =    15.603733  +
+n =  3   l =  0   order = 0   enu =    82.753408  +
+n =  3   l =  0   order = 1   enu =    82.753408  +
+n =  3   l =  1   order = 0   enu =    67.254939  +
+n =  3   l =  1   order = 1   enu =    67.254939  +
+
+Atom : S, class id : 43
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    15.312345  +
+n =  2   l =  0   order = 1   enu =    15.312345  +
+n =  2   l =  1   order = 0   enu =    15.603680  +
+n =  2   l =  1   order = 1   enu =    15.603680  +
+n =  3   l =  0   order = 0   enu =    82.753355  +
+n =  3   l =  0   order = 1   enu =    82.753355  +
+n =  3   l =  1   order = 0   enu =    67.254886  +
+n =  3   l =  1   order = 1   enu =    67.254886  +
+
+Atom : S, class id : 44
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    15.312321  +
+n =  2   l =  0   order = 1   enu =    15.312321  +
+n =  2   l =  1   order = 0   enu =    15.603655  +
+n =  2   l =  1   order = 1   enu =    15.603655  +
+n =  3   l =  0   order = 0   enu =    82.753330  +
+n =  3   l =  0   order = 1   enu =    82.753330  +
+n =  3   l =  1   order = 0   enu =    67.254862  +
+n =  3   l =  1   order = 1   enu =    67.254862  +
+
+Atom : S, class id : 45
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    15.312341  +
+n =  2   l =  0   order = 1   enu =    15.312341  +
+n =  2   l =  1   order = 0   enu =    15.603675  +
+n =  2   l =  1   order = 1   enu =    15.603675  +
+n =  3   l =  0   order = 0   enu =    82.753350  +
+n =  3   l =  0   order = 1   enu =    82.753350  +
+n =  3   l =  1   order = 0   enu =    67.254882  +
+n =  3   l =  1   order = 1   enu =    67.254882  +
+
+Atom : S, class id : 46
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    15.312356  +
+n =  2   l =  0   order = 1   enu =    15.312356  +
+n =  2   l =  1   order = 0   enu =    15.603690  +
+n =  2   l =  1   order = 1   enu =    15.603690  +
+n =  3   l =  0   order = 0   enu =    82.753365  +
+n =  3   l =  0   order = 1   enu =    82.753365  +
+n =  3   l =  1   order = 0   enu =    67.254897  +
+n =  3   l =  1   order = 1   enu =    67.254897  +
+
+Atom : S, class id : 47
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    15.312219  +
+n =  2   l =  0   order = 1   enu =    15.312219  +
+n =  2   l =  1   order = 0   enu =    15.603554  +
+n =  2   l =  1   order = 1   enu =    15.603554  +
+n =  3   l =  0   order = 0   enu =    82.753229  +
+n =  3   l =  0   order = 1   enu =    82.753229  +
+n =  3   l =  1   order = 0   enu =    67.254760  +
+n =  3   l =  1   order = 1   enu =    67.254760  +
+
+Atom : N, class id : 48
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -9.459477  +
+n =  1   l =  0   order = 1   enu =    -9.459477  +
+n =  2   l =  0   order = 0   enu =    15.884155  +
+n =  2   l =  0   order = 1   enu =    15.884155  +
+n =  2   l =  1   order = 0   enu =     7.588680  +
+n =  2   l =  1   order = 1   enu =     7.588680  +
+
+Atom : N, class id : 49
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -9.459377  +
+n =  1   l =  0   order = 1   enu =    -9.459377  +
+n =  2   l =  0   order = 0   enu =    15.884255  +
+n =  2   l =  0   order = 1   enu =    15.884255  +
+n =  2   l =  1   order = 0   enu =     7.588780  +
+n =  2   l =  1   order = 1   enu =     7.588780  +
+
+Atom : N, class id : 50
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -9.459683  +
+n =  1   l =  0   order = 1   enu =    -9.459683  +
+n =  2   l =  0   order = 0   enu =    15.883949  +
+n =  2   l =  0   order = 1   enu =    15.883949  +
+n =  2   l =  1   order = 0   enu =     7.588474  +
+n =  2   l =  1   order = 1   enu =     7.588474  +
+
+Atom : N, class id : 51
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -9.459611  +
+n =  1   l =  0   order = 1   enu =    -9.459611  +
+n =  2   l =  0   order = 0   enu =    15.884021  +
+n =  2   l =  0   order = 1   enu =    15.884021  +
+n =  2   l =  1   order = 0   enu =     7.588546  +
+n =  2   l =  1   order = 1   enu =     7.588546  +
+
+Atom : N, class id : 52
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -6.531337  +
+n =  1   l =  0   order = 1   enu =    -6.531337  +
+n =  2   l =  0   order = 0   enu =    18.812309  +
+n =  2   l =  0   order = 1   enu =    18.812309  +
+n =  2   l =  1   order = 0   enu =    10.516847  +
+n =  2   l =  1   order = 1   enu =    10.516847  +
+
+Atom : N, class id : 53
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -6.531060  +
+n =  1   l =  0   order = 1   enu =    -6.531060  +
+n =  2   l =  0   order = 0   enu =    18.812585  +
+n =  2   l =  0   order = 1   enu =    18.812585  +
+n =  2   l =  1   order = 0   enu =    10.517124  +
+n =  2   l =  1   order = 1   enu =    10.517124  +
+
+Atom : N, class id : 54
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -6.531514  +
+n =  1   l =  0   order = 1   enu =    -6.531514  +
+n =  2   l =  0   order = 0   enu =    18.812131  +
+n =  2   l =  0   order = 1   enu =    18.812131  +
+n =  2   l =  1   order = 0   enu =    10.516670  +
+n =  2   l =  1   order = 1   enu =    10.516670  +
+
+Atom : N, class id : 55
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -6.531158  +
+n =  1   l =  0   order = 1   enu =    -6.531158  +
+n =  2   l =  0   order = 0   enu =    18.812487  +
+n =  2   l =  0   order = 1   enu =    18.812487  +
+n =  2   l =  1   order = 0   enu =    10.517026  +
+n =  2   l =  1   order = 1   enu =    10.517026  +
+
+Atom : N, class id : 56
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -9.459538  +
+n =  1   l =  0   order = 1   enu =    -9.459538  +
+n =  2   l =  0   order = 0   enu =    15.884094  +
+n =  2   l =  0   order = 1   enu =    15.884094  +
+n =  2   l =  1   order = 0   enu =     7.588619  +
+n =  2   l =  1   order = 1   enu =     7.588619  +
+
+Atom : N, class id : 57
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -9.459527  +
+n =  1   l =  0   order = 1   enu =    -9.459527  +
+n =  2   l =  0   order = 0   enu =    15.884105  +
+n =  2   l =  0   order = 1   enu =    15.884105  +
+n =  2   l =  1   order = 0   enu =     7.588630  +
+n =  2   l =  1   order = 1   enu =     7.588630  +
+
+Atom : N, class id : 58
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -9.459454  +
+n =  1   l =  0   order = 1   enu =    -9.459454  +
+n =  2   l =  0   order = 0   enu =    15.884178  +
+n =  2   l =  0   order = 1   enu =    15.884178  +
+n =  2   l =  1   order = 0   enu =     7.588703  +
+n =  2   l =  1   order = 1   enu =     7.588703  +
+
+Atom : N, class id : 59
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -9.459826  +
+n =  1   l =  0   order = 1   enu =    -9.459826  +
+n =  2   l =  0   order = 0   enu =    15.883806  +
+n =  2   l =  0   order = 1   enu =    15.883806  +
+n =  2   l =  1   order = 0   enu =     7.588331  +
+n =  2   l =  1   order = 1   enu =     7.588331  +
+
+Atom : N, class id : 60
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -6.531334  +
+n =  1   l =  0   order = 1   enu =    -6.531334  +
+n =  2   l =  0   order = 0   enu =    18.812311  +
+n =  2   l =  0   order = 1   enu =    18.812311  +
+n =  2   l =  1   order = 0   enu =    10.516850  +
+n =  2   l =  1   order = 1   enu =    10.516850  +
+
+Atom : N, class id : 61
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -6.531402  +
+n =  1   l =  0   order = 1   enu =    -6.531402  +
+n =  2   l =  0   order = 0   enu =    18.812243  +
+n =  2   l =  0   order = 1   enu =    18.812243  +
+n =  2   l =  1   order = 0   enu =    10.516782  +
+n =  2   l =  1   order = 1   enu =    10.516782  +
+
+Atom : N, class id : 62
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -6.531332  +
+n =  1   l =  0   order = 1   enu =    -6.531332  +
+n =  2   l =  0   order = 0   enu =    18.812314  +
+n =  2   l =  0   order = 1   enu =    18.812314  +
+n =  2   l =  1   order = 0   enu =    10.516852  +
+n =  2   l =  1   order = 1   enu =    10.516852  +
+
+Atom : N, class id : 63
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -6.531386  +
+n =  1   l =  0   order = 1   enu =    -6.531386  +
+n =  2   l =  0   order = 0   enu =    18.812259  +
+n =  2   l =  0   order = 1   enu =    18.812259  +
+n =  2   l =  1   order = 0   enu =    10.516798  +
+n =  2   l =  1   order = 1   enu =    10.516798  +
+
+Atom : Cl, class id : 64
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    16.588508  +
+n =  2   l =  0   order = 1   enu =    16.588508  +
+n =  2   l =  1   order = 0   enu =    15.947492  +
+n =  2   l =  1   order = 1   enu =    15.947492  +
+n =  3   l =  0   order = 0   enu =    93.326748  +
+n =  3   l =  0   order = 1   enu =    93.326748  +
+n =  3   l =  1   order = 0   enu =    75.565182  +
+n =  3   l =  1   order = 1   enu =    75.565182  +
+
+Atom : Cl, class id : 65
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    16.607920  +
+n =  2   l =  0   order = 1   enu =    16.607920  +
+n =  2   l =  1   order = 0   enu =    15.966904  +
+n =  2   l =  1   order = 1   enu =    15.966904  +
+n =  3   l =  0   order = 0   enu =    93.346161  +
+n =  3   l =  0   order = 1   enu =    93.346161  +
+n =  3   l =  1   order = 0   enu =    75.584595  +
+n =  3   l =  1   order = 1   enu =    75.584595  +
+
+Atom : Cl, class id : 66
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    16.588832  +
+n =  2   l =  0   order = 1   enu =    16.588832  +
+n =  2   l =  1   order = 0   enu =    15.947817  +
+n =  2   l =  1   order = 1   enu =    15.947817  +
+n =  3   l =  0   order = 0   enu =    93.327073  +
+n =  3   l =  0   order = 1   enu =    93.327073  +
+n =  3   l =  1   order = 0   enu =    75.565507  +
+n =  3   l =  1   order = 1   enu =    75.565507  +
+
+Atom : Cl, class id : 67
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    16.607954  +
+n =  2   l =  0   order = 1   enu =    16.607954  +
+n =  2   l =  1   order = 0   enu =    15.966938  +
+n =  2   l =  1   order = 1   enu =    15.966938  +
+n =  3   l =  0   order = 0   enu =    93.346195  +
+n =  3   l =  0   order = 1   enu =    93.346195  +
+n =  3   l =  1   order = 0   enu =    75.584629  +
+n =  3   l =  1   order = 1   enu =    75.584629  +
+
+Atom : Ni, class id : 68
+augmented waves
+local orbitals
+n =  3   l =  0   order = 0   enu =    29.385240  +
+n =  3   l =  0   order = 1   enu =    29.385240  +
+n =  3   l =  1   order = 0   enu =    34.357001  +
+n =  3   l =  1   order = 1   enu =    34.357001  +
+n =  3   l =  2   order = 0   enu =    29.204112  +
+n =  3   l =  2   order = 1   enu =    29.204112  +
+n =  4   l =  0   order = 0   enu =    54.853835  +
+n =  4   l =  0   order = 1   enu =    54.853835  +
+
+Atom : Ni, class id : 69
+augmented waves
+local orbitals
+n =  3   l =  0   order = 0   enu =    29.385125  +
+n =  3   l =  0   order = 1   enu =    29.385125  +
+n =  3   l =  1   order = 0   enu =    34.356886  +
+n =  3   l =  1   order = 1   enu =    34.356886  +
+n =  3   l =  2   order = 0   enu =    29.203998  +
+n =  3   l =  2   order = 1   enu =    29.203998  +
+n =  4   l =  0   order = 0   enu =    54.853720  +
+n =  4   l =  0   order = 1   enu =    54.853720  +
+
+[solve] iterative solver tolerance (occupied, empty) : 1.0000e-13, 1.0000e-13
+[get_singular_components] smallest eigen-value of the singular components:   0.0000373929882772
+[solve] Lowest band energies
+ik :  0,    -9.556599   -9.556455   -9.556385   -9.556230   -9.555116   -9.555103   -9.555055   -9.554955   -6.638384   -6.638346
+            -9.556599   -9.556455   -9.556385   -9.556230   -9.555116   -9.555103   -9.555055   -9.554955   -6.638384   -6.638346
+ik :  1,    -9.556598   -9.556455   -9.556384   -9.556229   -9.555112   -9.555099   -9.555052   -9.554951   -6.638382   -6.638346
+            -9.556598   -9.556455   -9.556384   -9.556229   -9.555112   -9.555099   -9.555052   -9.554951   -6.638382   -6.638346
+ik :  2,    -9.556598   -9.556455   -9.556384   -9.556229   -9.555105   -9.555093   -9.555046   -9.554945   -6.638380   -6.638344
+            -9.556598   -9.556455   -9.556384   -9.556229   -9.555105   -9.555093   -9.555046   -9.554945   -6.638380   -6.638344
+ik :  3,    -9.556598   -9.556455   -9.556384   -9.556229   -9.555108   -9.555095   -9.555047   -9.554947   -6.638381   -6.638345
+            -9.556598   -9.556455   -9.556384   -9.556229   -9.555108   -9.555095   -9.555047   -9.554947   -6.638381   -6.638345
+ik :  4,    -9.556598   -9.556455   -9.556384   -9.556229   -9.555110   -9.555098   -9.555050   -9.554949   -6.638382   -6.638345
+            -9.556598   -9.556455   -9.556384   -9.556229   -9.555110   -9.555098   -9.555050   -9.554949   -6.638382   -6.638345
+ik :  5,    -9.556598   -9.556455   -9.556384   -9.556230   -9.555111   -9.555099   -9.555051   -9.554950   -6.638382   -6.638345
+            -9.556598   -9.556455   -9.556384   -9.556230   -9.555111   -9.555099   -9.555051   -9.554950   -6.638382   -6.638345
+ik :  6,    -9.556598   -9.556456   -9.556384   -9.556230   -9.555112   -9.555100   -9.555052   -9.554952   -6.638382   -6.638346
+            -9.556598   -9.556456   -9.556384   -9.556230   -9.555112   -9.555100   -9.555052   -9.554952   -6.638382   -6.638346
+ik :  7,    -9.556598   -9.556455   -9.556384   -9.556229   -9.555105   -9.555093   -9.555045   -9.554945   -6.638380   -6.638344
+            -9.556598   -9.556455   -9.556384   -9.556229   -9.555105   -9.555093   -9.555045   -9.554945   -6.638380   -6.638344
+[find] 
+[find] Charges and magnetic moments
+[find] --------------------------------------------------------------------------------
+[find] atom      charge    core leakage                 moment                |moment|
+[find] --------------------------------------------------------------------------------
+[find]    0    0.964820    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]    1    0.964869    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]    2    0.964090    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]    3    0.964081    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]    4    0.452498    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]    5    0.452457    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]    6    0.455751    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]    7    0.455724    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]    8    0.054224    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]    9    0.054224    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   10    0.054229    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   11    0.054228    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   12    0.057188    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   13    0.057183    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   14    0.057244    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   15    0.057238    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   16    0.964843    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   17    0.964870    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   18    0.964094    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   19    0.964062    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   20    0.452503    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   21    0.452470    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   22    0.455723    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   23    0.455756    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   24    0.054224    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   25    0.054225    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   26    0.054228    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   27    0.054229    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   28    0.057189    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   29    0.057192    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   30    0.057243    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   31    0.057246    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   32    2.521836    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   33    2.521833    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   34    2.522164    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   35    2.522164    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   36    2.521833    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   37    2.521836    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   38    2.522164    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   39    2.522169    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   40    5.667149    1.373472e-04  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   41    5.667149    1.373472e-04  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   42    5.667150    1.373472e-04  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   43    5.667150    1.373472e-04  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   44    5.667149    1.373472e-04  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   45    5.667149    1.373472e-04  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   46    5.667150    1.373472e-04  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   47    5.667150    1.373472e-04  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   48    3.282170    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   49    3.282127    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   50    3.290905    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   51    3.290883    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   52    2.738438    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   53    2.738437    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   54    2.738488    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   55    2.738486    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   56    3.282185    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   57    3.282173    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   58    3.290843    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   59    3.290969    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   60    2.738439    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   61    2.738439    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   62    2.738486    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   63    2.738487    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   64    5.757334    1.243656e-04  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   65    5.757108    1.243656e-04  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   66    5.757334    1.243656e-04  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   67    5.757108    1.243656e-04  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   68   18.494992    0.000000e+00  [  0.00000,   0.00000,  -1.00000]    1.000000
+[find]   69   18.494990    0.000000e+00  [  0.00000,   0.00000,   1.00000]    1.000000
+[find] 
+[find] total core leakage    : 1.59624026e-03
+[find] interstitial charge   : 258.042142
+[find] interstitial moment   : [  0.00000,   0.00000,   0.00000], magnitude : 0.000000
+[find] total charge          : 444.014304
+[find] total moment          : [  0.00000,   0.00000,   0.00000], magnitude : 0.000000
+[find] 
+[find] Energy
+[find] --------------------------------------------------------------------------------
+[find] valence_eval_sum               :    -724.43124801
+[find] core_eval_sum                  :   -1975.34288423
+[find] kinetic energy                 :   12254.51497635
+[find] enuc                           :  -10606.88782871
+[find] <rho|V^{XC}>                   :    -794.02942770
+[find] <rho|E^{XC}>                   :    -601.13475861
+[find] <mag|B^{XC}>                   :      -1.78920250
+[find] <rho|V^{H}>                    :  -14158.65717063
+[find] smearing (-TS)                 :      -0.00017735
+[find] SCF correction                 :      13.90416286
+[find] Total energy                   :   -6018.93203342 (Ha),  -12037.86406685 (Ry)
+[find] 
+[find] band gap (eV)                  :       0.00000000
+[find] Efermi                         :      -0.22687042
+[find] 
+[find] iteration : 0, RMS : 2.767355563515e+00, energy difference : -6.018932033425e+03
+[find] residual density Hartree energy : 1.999576799841e+02
+[find] 
+[find] +------------------------------+
+[find] | SCF iteration   1 out of 200|
+[find] +------------------------------+
+[find] 
+
+Linearization energies
+Atom : H, class id : 0
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    14.138921  +
+n =  1   l =  0   order = 1   enu =    14.138921  +
+
+Atom : H, class id : 1
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    14.139660  +
+n =  1   l =  0   order = 1   enu =    14.139660  +
+
+Atom : H, class id : 2
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    14.157780  +
+n =  1   l =  0   order = 1   enu =    14.157780  +
+
+Atom : H, class id : 3
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    14.157458  +
+n =  1   l =  0   order = 1   enu =    14.157458  +
+
+Atom : H, class id : 4
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     7.414032  +
+n =  1   l =  0   order = 1   enu =     7.414032  +
+
+Atom : H, class id : 5
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     7.413133  +
+n =  1   l =  0   order = 1   enu =     7.413133  +
+
+Atom : H, class id : 6
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     7.449158  +
+n =  1   l =  0   order = 1   enu =     7.449158  +
+
+Atom : H, class id : 7
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     7.448378  +
+n =  1   l =  0   order = 1   enu =     7.448378  +
+
+Atom : H, class id : 8
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.594475  +
+n =  1   l =  0   order = 1   enu =     4.594475  +
+
+Atom : H, class id : 9
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.593690  +
+n =  1   l =  0   order = 1   enu =     4.593690  +
+
+Atom : H, class id : 10
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.589170  +
+n =  1   l =  0   order = 1   enu =     4.589170  +
+
+Atom : H, class id : 11
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.588460  +
+n =  1   l =  0   order = 1   enu =     4.588460  +
+
+Atom : H, class id : 12
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.534086  +
+n =  1   l =  0   order = 1   enu =     3.534086  +
+
+Atom : H, class id : 13
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.533582  +
+n =  1   l =  0   order = 1   enu =     3.533582  +
+
+Atom : H, class id : 14
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.532933  +
+n =  1   l =  0   order = 1   enu =     3.532933  +
+
+Atom : H, class id : 15
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.532614  +
+n =  1   l =  0   order = 1   enu =     3.532614  +
+
+Atom : H, class id : 16
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    14.140566  +
+n =  1   l =  0   order = 1   enu =    14.140566  +
+
+Atom : H, class id : 17
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    14.139748  +
+n =  1   l =  0   order = 1   enu =    14.139748  +
+
+Atom : H, class id : 18
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    14.157651  +
+n =  1   l =  0   order = 1   enu =    14.157651  +
+
+Atom : H, class id : 19
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    14.157430  +
+n =  1   l =  0   order = 1   enu =    14.157430  +
+
+Atom : H, class id : 20
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     7.414746  +
+n =  1   l =  0   order = 1   enu =     7.414746  +
+
+Atom : H, class id : 21
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     7.414350  +
+n =  1   l =  0   order = 1   enu =     7.414350  +
+
+Atom : H, class id : 22
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     7.448148  +
+n =  1   l =  0   order = 1   enu =     7.448148  +
+
+Atom : H, class id : 23
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     7.449193  +
+n =  1   l =  0   order = 1   enu =     7.449193  +
+
+Atom : H, class id : 24
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.594705  +
+n =  1   l =  0   order = 1   enu =     4.594705  +
+
+Atom : H, class id : 25
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.595402  +
+n =  1   l =  0   order = 1   enu =     4.595402  +
+
+Atom : H, class id : 26
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.589187  +
+n =  1   l =  0   order = 1   enu =     4.589187  +
+
+Atom : H, class id : 27
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.590094  +
+n =  1   l =  0   order = 1   enu =     4.590094  +
+
+Atom : H, class id : 28
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.534137  +
+n =  1   l =  0   order = 1   enu =     3.534137  +
+
+Atom : H, class id : 29
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.535158  +
+n =  1   l =  0   order = 1   enu =     3.535158  +
+
+Atom : H, class id : 30
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.533144  +
+n =  1   l =  0   order = 1   enu =     3.533144  +
+
+Atom : H, class id : 31
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.534239  +
+n =  1   l =  0   order = 1   enu =     3.534239  +
+
+Atom : C, class id : 32
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -8.831742  +
+n =  1   l =  0   order = 1   enu =    -8.831742  +
+n =  2   l =  0   order = 0   enu =    17.306701  +
+n =  2   l =  0   order = 1   enu =    17.306701  +
+n =  2   l =  1   order = 0   enu =     8.260825  +
+n =  2   l =  1   order = 1   enu =     8.260825  +
+
+Atom : C, class id : 33
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -8.831935  +
+n =  1   l =  0   order = 1   enu =    -8.831935  +
+n =  2   l =  0   order = 0   enu =    17.306509  +
+n =  2   l =  0   order = 1   enu =    17.306509  +
+n =  2   l =  1   order = 0   enu =     8.260634  +
+n =  2   l =  1   order = 1   enu =     8.260634  +
+
+Atom : C, class id : 34
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -8.836981  +
+n =  1   l =  0   order = 1   enu =    -8.836981  +
+n =  2   l =  0   order = 0   enu =    17.301311  +
+n =  2   l =  0   order = 1   enu =    17.301311  +
+n =  2   l =  1   order = 0   enu =     8.255257  +
+n =  2   l =  1   order = 1   enu =     8.255257  +
+
+Atom : C, class id : 35
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -8.837505  +
+n =  1   l =  0   order = 1   enu =    -8.837505  +
+n =  2   l =  0   order = 0   enu =    17.300787  +
+n =  2   l =  0   order = 1   enu =    17.300787  +
+n =  2   l =  1   order = 0   enu =     8.254732  +
+n =  2   l =  1   order = 1   enu =     8.254732  +
+
+Atom : C, class id : 36
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -8.831110  +
+n =  1   l =  0   order = 1   enu =    -8.831110  +
+n =  2   l =  0   order = 0   enu =    17.307334  +
+n =  2   l =  0   order = 1   enu =    17.307334  +
+n =  2   l =  1   order = 0   enu =     8.261459  +
+n =  2   l =  1   order = 1   enu =     8.261459  +
+
+Atom : C, class id : 37
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -8.830845  +
+n =  1   l =  0   order = 1   enu =    -8.830845  +
+n =  2   l =  0   order = 0   enu =    17.307598  +
+n =  2   l =  0   order = 1   enu =    17.307598  +
+n =  2   l =  1   order = 0   enu =     8.261722  +
+n =  2   l =  1   order = 1   enu =     8.261722  +
+
+Atom : C, class id : 38
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -8.836812  +
+n =  1   l =  0   order = 1   enu =    -8.836812  +
+n =  2   l =  0   order = 0   enu =    17.301481  +
+n =  2   l =  0   order = 1   enu =    17.301481  +
+n =  2   l =  1   order = 0   enu =     8.255427  +
+n =  2   l =  1   order = 1   enu =     8.255427  +
+
+Atom : C, class id : 39
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -8.835915  +
+n =  1   l =  0   order = 1   enu =    -8.835915  +
+n =  2   l =  0   order = 0   enu =    17.302375  +
+n =  2   l =  0   order = 1   enu =    17.302375  +
+n =  2   l =  1   order = 0   enu =     8.256319  +
+n =  2   l =  1   order = 1   enu =     8.256319  +
+
+Atom : S, class id : 40
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =   -14.380779  +
+n =  2   l =  0   order = 1   enu =   -14.380779  +
+n =  2   l =  1   order = 0   enu =   -14.103715  +
+n =  2   l =  1   order = 1   enu =   -14.103715  +
+n =  3   l =  0   order = 0   enu =    50.583356  +
+n =  3   l =  0   order = 1   enu =    50.583356  +
+n =  3   l =  1   order = 0   enu =    34.905240  +
+n =  3   l =  1   order = 1   enu =    34.905240  +
+
+Atom : S, class id : 41
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =   -14.380844  +
+n =  2   l =  0   order = 1   enu =   -14.380844  +
+n =  2   l =  1   order = 0   enu =   -14.103781  +
+n =  2   l =  1   order = 1   enu =   -14.103781  +
+n =  3   l =  0   order = 0   enu =    50.583290  +
+n =  3   l =  0   order = 1   enu =    50.583290  +
+n =  3   l =  1   order = 0   enu =    34.905174  +
+n =  3   l =  1   order = 1   enu =    34.905174  +
+
+Atom : S, class id : 42
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =   -14.357935  +
+n =  2   l =  0   order = 1   enu =   -14.357935  +
+n =  2   l =  1   order = 0   enu =   -14.080872  +
+n =  2   l =  1   order = 1   enu =   -14.080872  +
+n =  3   l =  0   order = 0   enu =    50.606199  +
+n =  3   l =  0   order = 1   enu =    50.606199  +
+n =  3   l =  1   order = 0   enu =    34.928083  +
+n =  3   l =  1   order = 1   enu =    34.928083  +
+
+Atom : S, class id : 43
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =   -14.358463  +
+n =  2   l =  0   order = 1   enu =   -14.358463  +
+n =  2   l =  1   order = 0   enu =   -14.081399  +
+n =  2   l =  1   order = 1   enu =   -14.081399  +
+n =  3   l =  0   order = 0   enu =    50.605671  +
+n =  3   l =  0   order = 1   enu =    50.605671  +
+n =  3   l =  1   order = 0   enu =    34.927556  +
+n =  3   l =  1   order = 1   enu =    34.927556  +
+
+Atom : S, class id : 44
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =   -14.381358  +
+n =  2   l =  0   order = 1   enu =   -14.381358  +
+n =  2   l =  1   order = 0   enu =   -14.104294  +
+n =  2   l =  1   order = 1   enu =   -14.104294  +
+n =  3   l =  0   order = 0   enu =    50.582776  +
+n =  3   l =  0   order = 1   enu =    50.582776  +
+n =  3   l =  1   order = 0   enu =    34.904661  +
+n =  3   l =  1   order = 1   enu =    34.904661  +
+
+Atom : S, class id : 45
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =   -14.380899  +
+n =  2   l =  0   order = 1   enu =   -14.380899  +
+n =  2   l =  1   order = 0   enu =   -14.103835  +
+n =  2   l =  1   order = 1   enu =   -14.103835  +
+n =  3   l =  0   order = 0   enu =    50.583236  +
+n =  3   l =  0   order = 1   enu =    50.583236  +
+n =  3   l =  1   order = 0   enu =    34.905120  +
+n =  3   l =  1   order = 1   enu =    34.905120  +
+
+Atom : S, class id : 46
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =   -14.358197  +
+n =  2   l =  0   order = 1   enu =   -14.358197  +
+n =  2   l =  1   order = 0   enu =   -14.081133  +
+n =  2   l =  1   order = 1   enu =   -14.081133  +
+n =  3   l =  0   order = 0   enu =    50.605938  +
+n =  3   l =  0   order = 1   enu =    50.605938  +
+n =  3   l =  1   order = 0   enu =    34.927822  +
+n =  3   l =  1   order = 1   enu =    34.927822  +
+
+Atom : S, class id : 47
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =   -14.357696  +
+n =  2   l =  0   order = 1   enu =   -14.357696  +
+n =  2   l =  1   order = 0   enu =   -14.080632  +
+n =  2   l =  1   order = 1   enu =   -14.080632  +
+n =  3   l =  0   order = 0   enu =    50.606439  +
+n =  3   l =  0   order = 1   enu =    50.606439  +
+n =  3   l =  1   order = 0   enu =    34.928323  +
+n =  3   l =  1   order = 1   enu =    34.928323  +
+
+Atom : N, class id : 48
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -4.489346  +
+n =  1   l =  0   order = 1   enu =    -4.489346  +
+n =  2   l =  0   order = 0   enu =    22.295621  +
+n =  2   l =  0   order = 1   enu =    22.295621  +
+n =  2   l =  1   order = 0   enu =    15.233216  +
+n =  2   l =  1   order = 1   enu =    15.233216  +
+
+Atom : N, class id : 49
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -4.489730  +
+n =  1   l =  0   order = 1   enu =    -4.489730  +
+n =  2   l =  0   order = 0   enu =    22.295248  +
+n =  2   l =  0   order = 1   enu =    22.295248  +
+n =  2   l =  1   order = 0   enu =    15.232850  +
+n =  2   l =  1   order = 1   enu =    15.232850  +
+
+Atom : N, class id : 50
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -4.455712  +
+n =  1   l =  0   order = 1   enu =    -4.455712  +
+n =  2   l =  0   order = 0   enu =    22.327331  +
+n =  2   l =  0   order = 1   enu =    22.327331  +
+n =  2   l =  1   order = 0   enu =    15.263964  +
+n =  2   l =  1   order = 1   enu =    15.263964  +
+
+Atom : N, class id : 51
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -4.456416  +
+n =  1   l =  0   order = 1   enu =    -4.456416  +
+n =  2   l =  0   order = 0   enu =    22.326631  +
+n =  2   l =  0   order = 1   enu =    22.326631  +
+n =  2   l =  1   order = 0   enu =    15.263267  +
+n =  2   l =  1   order = 1   enu =    15.263267  +
+
+Atom : N, class id : 52
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.754980  +
+n =  1   l =  0   order = 1   enu =   -13.754980  +
+n =  2   l =  0   order = 0   enu =    13.192717  +
+n =  2   l =  0   order = 1   enu =    13.192717  +
+n =  2   l =  1   order = 0   enu =     6.224461  +
+n =  2   l =  1   order = 1   enu =     6.224461  +
+
+Atom : N, class id : 53
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.755875  +
+n =  1   l =  0   order = 1   enu =   -13.755875  +
+n =  2   l =  0   order = 0   enu =    13.191823  +
+n =  2   l =  0   order = 1   enu =    13.191823  +
+n =  2   l =  1   order = 0   enu =     6.223568  +
+n =  2   l =  1   order = 1   enu =     6.223568  +
+
+Atom : N, class id : 54
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.756760  +
+n =  1   l =  0   order = 1   enu =   -13.756760  +
+n =  2   l =  0   order = 0   enu =    13.190866  +
+n =  2   l =  0   order = 1   enu =    13.190866  +
+n =  2   l =  1   order = 0   enu =     6.222564  +
+n =  2   l =  1   order = 1   enu =     6.222564  +
+
+Atom : N, class id : 55
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.757673  +
+n =  1   l =  0   order = 1   enu =   -13.757673  +
+n =  2   l =  0   order = 0   enu =    13.189954  +
+n =  2   l =  0   order = 1   enu =    13.189954  +
+n =  2   l =  1   order = 0   enu =     6.221654  +
+n =  2   l =  1   order = 1   enu =     6.221654  +
+
+Atom : N, class id : 56
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -4.488228  +
+n =  1   l =  0   order = 1   enu =    -4.488228  +
+n =  2   l =  0   order = 0   enu =    22.296734  +
+n =  2   l =  0   order = 1   enu =    22.296734  +
+n =  2   l =  1   order = 0   enu =    15.234327  +
+n =  2   l =  1   order = 1   enu =    15.234327  +
+
+Atom : N, class id : 57
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -4.488713  +
+n =  1   l =  0   order = 1   enu =    -4.488713  +
+n =  2   l =  0   order = 0   enu =    22.296252  +
+n =  2   l =  0   order = 1   enu =    22.296252  +
+n =  2   l =  1   order = 0   enu =    15.233847  +
+n =  2   l =  1   order = 1   enu =    15.233847  +
+
+Atom : N, class id : 58
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -4.456806  +
+n =  1   l =  0   order = 1   enu =    -4.456806  +
+n =  2   l =  0   order = 0   enu =    22.326252  +
+n =  2   l =  0   order = 1   enu =    22.326252  +
+n =  2   l =  1   order = 0   enu =    15.262893  +
+n =  2   l =  1   order = 1   enu =    15.262893  +
+
+Atom : N, class id : 59
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -4.454990  +
+n =  1   l =  0   order = 1   enu =    -4.454990  +
+n =  2   l =  0   order = 0   enu =    22.328036  +
+n =  2   l =  0   order = 1   enu =    22.328036  +
+n =  2   l =  1   order = 0   enu =    15.264661  +
+n =  2   l =  1   order = 1   enu =    15.264661  +
+
+Atom : N, class id : 60
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.754819  +
+n =  1   l =  0   order = 1   enu =   -13.754819  +
+n =  2   l =  0   order = 0   enu =    13.192878  +
+n =  2   l =  0   order = 1   enu =    13.192878  +
+n =  2   l =  1   order = 0   enu =     6.224622  +
+n =  2   l =  1   order = 1   enu =     6.224622  +
+
+Atom : N, class id : 61
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.754232  +
+n =  1   l =  0   order = 1   enu =   -13.754232  +
+n =  2   l =  0   order = 0   enu =    13.193464  +
+n =  2   l =  0   order = 1   enu =    13.193464  +
+n =  2   l =  1   order = 0   enu =     6.225208  +
+n =  2   l =  1   order = 1   enu =     6.225208  +
+
+Atom : N, class id : 62
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.756889  +
+n =  1   l =  0   order = 1   enu =   -13.756889  +
+n =  2   l =  0   order = 0   enu =    13.190738  +
+n =  2   l =  0   order = 1   enu =    13.190738  +
+n =  2   l =  1   order = 0   enu =     6.222438  +
+n =  2   l =  1   order = 1   enu =     6.222438  +
+
+Atom : N, class id : 63
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.755893  +
+n =  1   l =  0   order = 1   enu =   -13.755893  +
+n =  2   l =  0   order = 0   enu =    13.191734  +
+n =  2   l =  0   order = 1   enu =    13.191734  +
+n =  2   l =  1   order = 0   enu =     6.223433  +
+n =  2   l =  1   order = 1   enu =     6.223433  +
+
+Atom : Cl, class id : 64
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =   -19.676998  +
+n =  2   l =  0   order = 1   enu =   -19.676998  +
+n =  2   l =  1   order = 0   enu =   -19.448056  +
+n =  2   l =  1   order = 1   enu =   -19.448056  +
+n =  3   l =  0   order = 0   enu =    55.360701  +
+n =  3   l =  0   order = 1   enu =    55.360701  +
+n =  3   l =  1   order = 0   enu =    37.394408  +
+n =  3   l =  1   order = 1   enu =    37.394408  +
+
+Atom : Cl, class id : 65
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =   -19.541741  +
+n =  2   l =  0   order = 1   enu =   -19.541741  +
+n =  2   l =  1   order = 0   enu =   -19.312815  +
+n =  2   l =  1   order = 1   enu =   -19.312815  +
+n =  3   l =  0   order = 0   enu =    55.495942  +
+n =  3   l =  0   order = 1   enu =    55.495942  +
+n =  3   l =  1   order = 0   enu =    37.529645  +
+n =  3   l =  1   order = 1   enu =    37.529645  +
+
+Atom : Cl, class id : 66
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =   -19.676883  +
+n =  2   l =  0   order = 1   enu =   -19.676883  +
+n =  2   l =  1   order = 0   enu =   -19.447941  +
+n =  2   l =  1   order = 1   enu =   -19.447941  +
+n =  3   l =  0   order = 0   enu =    55.360816  +
+n =  3   l =  0   order = 1   enu =    55.360816  +
+n =  3   l =  1   order = 0   enu =    37.394523  +
+n =  3   l =  1   order = 1   enu =    37.394523  +
+
+Atom : Cl, class id : 67
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =   -19.542276  +
+n =  2   l =  0   order = 1   enu =   -19.542276  +
+n =  2   l =  1   order = 0   enu =   -19.313350  +
+n =  2   l =  1   order = 1   enu =   -19.313350  +
+n =  3   l =  0   order = 0   enu =    55.495407  +
+n =  3   l =  0   order = 1   enu =    55.495407  +
+n =  3   l =  1   order = 0   enu =    37.529110  +
+n =  3   l =  1   order = 1   enu =    37.529110  +
+
+Atom : Ni, class id : 68
+augmented waves
+local orbitals
+n =  3   l =  0   order = 0   enu =   -20.018797  +
+n =  3   l =  0   order = 1   enu =   -20.018797  +
+n =  3   l =  1   order = 0   enu =   -18.444622  +
+n =  3   l =  1   order = 1   enu =   -18.444622  +
+n =  3   l =  2   order = 0   enu =   -16.403451  +
+n =  3   l =  2   order = 1   enu =   -16.403451  +
+n =  4   l =  0   order = 0   enu =     1.133570  +
+n =  4   l =  0   order = 1   enu =     1.133570  +
+
+Atom : Ni, class id : 69
+augmented waves
+local orbitals
+n =  3   l =  0   order = 0   enu =   -20.018973  +
+n =  3   l =  0   order = 1   enu =   -20.018973  +
+n =  3   l =  1   order = 0   enu =   -18.444798  +
+n =  3   l =  1   order = 1   enu =   -18.444798  +
+n =  3   l =  2   order = 0   enu =   -16.403626  +
+n =  3   l =  2   order = 1   enu =   -16.403626  +
+n =  4   l =  0   order = 0   enu =     1.133394  +
+n =  4   l =  0   order = 1   enu =     1.133394  +
+
+[solve] iterative solver tolerance (occupied, empty) : 1.0000e-13, 1.0000e-13
+[get_singular_components] smallest eigen-value of the singular components:   0.0000543293349639
+[solve] Lowest band energies
+ik :  0,   -22.809660  -22.808962  -22.652888  -22.652853  -21.534477  -20.774360  -20.774141  -20.723060  -20.722680  -20.722440
+           -22.809660  -22.808962  -22.652888  -22.652853  -21.534248  -20.774360  -20.774141  -20.723060  -20.722681  -20.722440
+ik :  1,   -22.809528  -22.808830  -22.652816  -22.652782  -21.534451  -20.773627  -20.773593  -20.722056  -20.721904  -20.721531
+           -22.809528  -22.808830  -22.652816  -22.652782  -21.534222  -20.773628  -20.773592  -20.722056  -20.721904  -20.721531
+ik :  2,   -22.809528  -22.808830  -22.652816  -22.652782  -21.534451  -20.773627  -20.773593  -20.722419  -20.722266  -20.721168
+           -22.809528  -22.808830  -22.652816  -22.652782  -21.534222  -20.773628  -20.773592  -20.722419  -20.722266  -20.721168
+ik :  3,   -22.809522  -22.808824  -22.652810  -22.652776  -21.534449  -20.773655  -20.773620  -20.722036  -20.721769  -20.721362
+           -22.809522  -22.808824  -22.652810  -22.652776  -21.534220  -20.773656  -20.773619  -20.722036  -20.721769  -20.721362
+ik :  4,   -22.809519  -22.808821  -22.652814  -22.652780  -21.534439  -20.773424  -20.773391  -20.722308  -20.722155  -20.721687
+           -22.809519  -22.808821  -22.652814  -22.652780  -21.534206  -20.773426  -20.773389  -20.722308  -20.722155  -20.721687
+ik :  5,   -22.809558  -22.808860  -22.652832  -22.652797  -21.534446  -20.773673  -20.773640  -20.722466  -20.722312  -20.721782
+           -22.809558  -22.808860  -22.652832  -22.652797  -21.534218  -20.773675  -20.773638  -20.722466  -20.722312  -20.721782
+ik :  6,   -22.809558  -22.808860  -22.652832  -22.652797  -21.534446  -20.773673  -20.773640  -20.722405  -20.722252  -20.721843
+           -22.809558  -22.808860  -22.652832  -22.652797  -21.534218  -20.773675  -20.773638  -20.722405  -20.722252  -20.721843
+ik :  7,   -22.809505  -22.808807  -22.652795  -22.652760  -21.534444  -20.773681  -20.773648  -20.721674  -20.721520  -20.721053
+           -22.809505  -22.808807  -22.652795  -22.652760  -21.534215  -20.773683  -20.773646  -20.721674  -20.721520  -20.721053
+[find] 
+[find] Charges and magnetic moments
+[find] --------------------------------------------------------------------------------
+[find] atom      charge    core leakage                 moment                |moment|
+[find] --------------------------------------------------------------------------------
+[find]    0    0.206953    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]    1    0.206963    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]    2    0.206796    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]    3    0.206794    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]    4    0.097061    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]    5    0.097052    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]    6    0.097758    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]    7    0.097753    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]    8    0.011632    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]    9    0.011632    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   10    0.011633    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   11    0.011633    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   12    0.012268    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   13    0.012267    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   14    0.012280    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   15    0.012279    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   16    0.206958    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   17    0.206963    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   18    0.206797    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   19    0.206790    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   20    0.097062    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   21    0.097055    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   22    0.097752    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   23    0.097760    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   24    0.011632    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   25    0.011632    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   26    0.011633    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   27    0.011633    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   28    0.012268    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   29    0.012269    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   30    0.012280    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   31    0.012281    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   32    2.058597    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   33    2.058597    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   34    2.058059    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   35    2.058059    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   36    2.058597    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   37    2.058598    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   38    2.058059    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   39    2.058060    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   40    7.928843    1.996900e-05  [  0.00000,   0.00000,   0.00457]    0.004566
+[find]   41    7.928852    1.996900e-05  [  0.00000,   0.00000,   0.00456]    0.004561
+[find]   42    7.926429    1.996901e-05  [  0.00000,   0.00000,   0.00471]    0.004709
+[find]   43    7.926457    1.996901e-05  [  0.00000,   0.00000,   0.00471]    0.004707
+[find]   44    7.928878    1.996900e-05  [  0.00000,   0.00000,  -0.00456]    0.004560
+[find]   45    7.928846    1.996900e-05  [  0.00000,   0.00000,  -0.00456]    0.004563
+[find]   46    7.926439    1.996901e-05  [  0.00000,   0.00000,  -0.00471]    0.004710
+[find]   47    7.926398    1.996900e-05  [  0.00000,   0.00000,  -0.00471]    0.004711
+[find]   48    0.704021    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   49    0.704011    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   50    0.705894    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   51    0.705890    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   52    2.138595    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   53    2.138595    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   54    2.138610    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   55    2.138610    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   56    0.704024    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   57    0.704021    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   58    0.705881    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   59    0.705908    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   60    2.138595    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   61    2.138595    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   62    2.138610    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   63    2.138610    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   64    8.637688    2.005452e-05  [  0.00000,   0.00000,   0.00501]    0.005012
+[find]   65    8.597625    2.005428e-05  [  0.00000,   0.00000,   0.01054]    0.010540
+[find]   66    8.637698    2.005452e-05  [  0.00000,   0.00000,  -0.00501]    0.005010
+[find]   67    8.597711    2.005428e-05  [  0.00000,   0.00000,  -0.01054]    0.010539
+[find]   68   29.328550    5.161093e-04  [  0.00000,   0.00000,  -0.58700]    0.587004
+[find]   69   29.328465    5.161093e-04  [  0.00000,   0.00000,   0.58700]    0.586996
+[find] 
+[find] total core leakage    : 1.27218818e-03
+[find] interstitial charge   : 245.612572
+[find] interstitial moment   : [  0.00000,   0.00000,   0.00001], magnitude : 0.000006
+[find] total charge          : 444.002068
+[find] total moment          : [  0.00000,   0.00000,   0.00000], magnitude : 0.000000
+[find] 
+[find] Energy
+[find] --------------------------------------------------------------------------------
+[find] valence_eval_sum               :   -5210.48079759
+[find] core_eval_sum                  :   -4363.00791115
+[find] kinetic energy                 :    -126.68080402
+[find] enuc                           :  -12151.97514321
+[find] <rho|V^{XC}>                   :    -849.88592248
+[find] <rho|E^{XC}>                   :    -643.39410829
+[find] <mag|B^{XC}>                   :      -0.68918305
+[find] <rho|V^{H}>                    :   -8596.27956861
+[find] smearing (-TS)                 :      -0.00000000
+[find] SCF correction                 :   11945.35990948
+[find] Total energy                   :   -5274.82993035 (Ha),  -10549.65986069 (Ry)
+[find] 
+[find] band gap (eV)                  :       0.30451830
+[find] Efermi                         :      -8.76442186
+[find] 
+[find] iteration : 1, RMS : 7.067526817525e-01, energy difference : 7.441021030782e+02
+[find] residual density Hartree energy : 3.500191631660e+02
+[find] 
+[find] +------------------------------+
+[find] | SCF iteration   2 out of 200|
+[find] +------------------------------+
+[find] 
+
+Linearization energies
+Atom : H, class id : 0
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -2.652572  +
+n =  1   l =  0   order = 1   enu =    -2.652572  +
+
+Atom : H, class id : 1
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -2.652720  +
+n =  1   l =  0   order = 1   enu =    -2.652720  +
+
+Atom : H, class id : 2
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -2.655814  +
+n =  1   l =  0   order = 1   enu =    -2.655814  +
+
+Atom : H, class id : 3
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -2.655871  +
+n =  1   l =  0   order = 1   enu =    -2.655871  +
+
+Atom : H, class id : 4
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     1.240688  +
+n =  1   l =  0   order = 1   enu =     1.240688  +
+
+Atom : H, class id : 5
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     1.241232  +
+n =  1   l =  0   order = 1   enu =     1.241232  +
+
+Atom : H, class id : 6
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     1.244503  +
+n =  1   l =  0   order = 1   enu =     1.244503  +
+
+Atom : H, class id : 7
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     1.244948  +
+n =  1   l =  0   order = 1   enu =     1.244948  +
+
+Atom : H, class id : 8
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     6.564645  +
+n =  1   l =  0   order = 1   enu =     6.564645  +
+
+Atom : H, class id : 9
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     6.565311  +
+n =  1   l =  0   order = 1   enu =     6.565311  +
+
+Atom : H, class id : 10
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     6.564742  +
+n =  1   l =  0   order = 1   enu =     6.564742  +
+
+Atom : H, class id : 11
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     6.565413  +
+n =  1   l =  0   order = 1   enu =     6.565413  +
+
+Atom : H, class id : 12
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     5.934044  +
+n =  1   l =  0   order = 1   enu =     5.934044  +
+
+Atom : H, class id : 13
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     5.934637  +
+n =  1   l =  0   order = 1   enu =     5.934637  +
+
+Atom : H, class id : 14
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     5.933909  +
+n =  1   l =  0   order = 1   enu =     5.933909  +
+
+Atom : H, class id : 15
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     5.934661  +
+n =  1   l =  0   order = 1   enu =     5.934661  +
+
+Atom : H, class id : 16
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -2.653176  +
+n =  1   l =  0   order = 1   enu =    -2.653176  +
+
+Atom : H, class id : 17
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -2.653097  +
+n =  1   l =  0   order = 1   enu =    -2.653097  +
+
+Atom : H, class id : 18
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -2.655513  +
+n =  1   l =  0   order = 1   enu =    -2.655513  +
+
+Atom : H, class id : 19
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -2.655828  +
+n =  1   l =  0   order = 1   enu =    -2.655828  +
+
+Atom : H, class id : 20
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     1.240464  +
+n =  1   l =  0   order = 1   enu =     1.240464  +
+
+Atom : H, class id : 21
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     1.240620  +
+n =  1   l =  0   order = 1   enu =     1.240620  +
+
+Atom : H, class id : 22
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     1.245052  +
+n =  1   l =  0   order = 1   enu =     1.245052  +
+
+Atom : H, class id : 23
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     1.244576  +
+n =  1   l =  0   order = 1   enu =     1.244576  +
+
+Atom : H, class id : 24
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     6.564689  +
+n =  1   l =  0   order = 1   enu =     6.564689  +
+
+Atom : H, class id : 25
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     6.563987  +
+n =  1   l =  0   order = 1   enu =     6.563987  +
+
+Atom : H, class id : 26
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     6.564930  +
+n =  1   l =  0   order = 1   enu =     6.564930  +
+
+Atom : H, class id : 27
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     6.564258  +
+n =  1   l =  0   order = 1   enu =     6.564258  +
+
+Atom : H, class id : 28
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     5.933882  +
+n =  1   l =  0   order = 1   enu =     5.933882  +
+
+Atom : H, class id : 29
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     5.933505  +
+n =  1   l =  0   order = 1   enu =     5.933505  +
+
+Atom : H, class id : 30
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     5.934029  +
+n =  1   l =  0   order = 1   enu =     5.934029  +
+
+Atom : H, class id : 31
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     5.933783  +
+n =  1   l =  0   order = 1   enu =     5.933783  +
+
+Atom : C, class id : 32
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -10.717758  +
+n =  1   l =  0   order = 1   enu =   -10.717758  +
+n =  2   l =  0   order = 0   enu =    15.582203  +
+n =  2   l =  0   order = 1   enu =    15.582203  +
+n =  2   l =  1   order = 0   enu =     6.673858  +
+n =  2   l =  1   order = 1   enu =     6.673858  +
+
+Atom : C, class id : 33
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -10.717168  +
+n =  1   l =  0   order = 1   enu =   -10.717168  +
+n =  2   l =  0   order = 0   enu =    15.582792  +
+n =  2   l =  0   order = 1   enu =    15.582792  +
+n =  2   l =  1   order = 0   enu =     6.674447  +
+n =  2   l =  1   order = 1   enu =     6.674447  +
+
+Atom : C, class id : 34
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -10.725242  +
+n =  1   l =  0   order = 1   enu =   -10.725242  +
+n =  2   l =  0   order = 0   enu =    15.575234  +
+n =  2   l =  0   order = 1   enu =    15.575234  +
+n =  2   l =  1   order = 0   enu =     6.667443  +
+n =  2   l =  1   order = 1   enu =     6.667443  +
+
+Atom : C, class id : 35
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -10.724878  +
+n =  1   l =  0   order = 1   enu =   -10.724878  +
+n =  2   l =  0   order = 0   enu =    15.575597  +
+n =  2   l =  0   order = 1   enu =    15.575597  +
+n =  2   l =  1   order = 0   enu =     6.667806  +
+n =  2   l =  1   order = 1   enu =     6.667806  +
+
+Atom : C, class id : 36
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -10.717832  +
+n =  1   l =  0   order = 1   enu =   -10.717832  +
+n =  2   l =  0   order = 0   enu =    15.582130  +
+n =  2   l =  0   order = 1   enu =    15.582130  +
+n =  2   l =  1   order = 0   enu =     6.673786  +
+n =  2   l =  1   order = 1   enu =     6.673786  +
+
+Atom : C, class id : 37
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -10.718167  +
+n =  1   l =  0   order = 1   enu =   -10.718167  +
+n =  2   l =  0   order = 0   enu =    15.581793  +
+n =  2   l =  0   order = 1   enu =    15.581793  +
+n =  2   l =  1   order = 0   enu =     6.673448  +
+n =  2   l =  1   order = 1   enu =     6.673448  +
+
+Atom : C, class id : 38
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -10.725079  +
+n =  1   l =  0   order = 1   enu =   -10.725079  +
+n =  2   l =  0   order = 0   enu =    15.575396  +
+n =  2   l =  0   order = 1   enu =    15.575396  +
+n =  2   l =  1   order = 0   enu =     6.667604  +
+n =  2   l =  1   order = 1   enu =     6.667604  +
+
+Atom : C, class id : 39
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -10.725890  +
+n =  1   l =  0   order = 1   enu =   -10.725890  +
+n =  2   l =  0   order = 0   enu =    15.574585  +
+n =  2   l =  0   order = 1   enu =    15.574585  +
+n =  2   l =  1   order = 0   enu =     6.666794  +
+n =  2   l =  1   order = 1   enu =     6.666794  +
+
+Atom : S, class id : 40
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    -2.574643  +
+n =  2   l =  0   order = 1   enu =    -2.574643  +
+n =  2   l =  1   order = 0   enu =    -2.062832  +
+n =  2   l =  1   order = 1   enu =    -2.062832  +
+n =  3   l =  0   order = 0   enu =    62.452895  +
+n =  3   l =  0   order = 1   enu =    62.452895  +
+n =  3   l =  1   order = 0   enu =    46.892225  +
+n =  3   l =  1   order = 1   enu =    46.892225  +
+
+Atom : S, class id : 41
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    -2.574597  +
+n =  2   l =  0   order = 1   enu =    -2.574597  +
+n =  2   l =  1   order = 0   enu =    -2.062785  +
+n =  2   l =  1   order = 1   enu =    -2.062785  +
+n =  3   l =  0   order = 0   enu =    62.452943  +
+n =  3   l =  0   order = 1   enu =    62.452943  +
+n =  3   l =  1   order = 0   enu =    46.892274  +
+n =  3   l =  1   order = 1   enu =    46.892274  +
+
+Atom : S, class id : 42
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    -2.577214  +
+n =  2   l =  0   order = 1   enu =    -2.577214  +
+n =  2   l =  1   order = 0   enu =    -2.065878  +
+n =  2   l =  1   order = 1   enu =    -2.065878  +
+n =  3   l =  0   order = 0   enu =    62.449734  +
+n =  3   l =  0   order = 1   enu =    62.449734  +
+n =  3   l =  1   order = 0   enu =    46.888875  +
+n =  3   l =  1   order = 1   enu =    46.888875  +
+
+Atom : S, class id : 43
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    -2.576538  +
+n =  2   l =  0   order = 1   enu =    -2.576538  +
+n =  2   l =  1   order = 0   enu =    -2.065197  +
+n =  2   l =  1   order = 1   enu =    -2.065197  +
+n =  3   l =  0   order = 0   enu =    62.450416  +
+n =  3   l =  0   order = 1   enu =    62.450416  +
+n =  3   l =  1   order = 0   enu =    46.889559  +
+n =  3   l =  1   order = 1   enu =    46.889559  +
+
+Atom : S, class id : 44
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    -2.574281  +
+n =  2   l =  0   order = 1   enu =    -2.574281  +
+n =  2   l =  1   order = 0   enu =    -2.062467  +
+n =  2   l =  1   order = 1   enu =    -2.062467  +
+n =  3   l =  0   order = 0   enu =    62.453263  +
+n =  3   l =  0   order = 1   enu =    62.453263  +
+n =  3   l =  1   order = 0   enu =    46.892595  +
+n =  3   l =  1   order = 1   enu =    46.892595  +
+
+Atom : S, class id : 45
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    -2.574755  +
+n =  2   l =  0   order = 1   enu =    -2.574755  +
+n =  2   l =  1   order = 0   enu =    -2.062945  +
+n =  2   l =  1   order = 1   enu =    -2.062945  +
+n =  3   l =  0   order = 0   enu =    62.452783  +
+n =  3   l =  0   order = 1   enu =    62.452783  +
+n =  3   l =  1   order = 0   enu =    46.892114  +
+n =  3   l =  1   order = 1   enu =    46.892114  +
+
+Atom : S, class id : 46
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    -2.576856  +
+n =  2   l =  0   order = 1   enu =    -2.576856  +
+n =  2   l =  1   order = 0   enu =    -2.065517  +
+n =  2   l =  1   order = 1   enu =    -2.065517  +
+n =  3   l =  0   order = 0   enu =    62.450095  +
+n =  3   l =  0   order = 1   enu =    62.450095  +
+n =  3   l =  1   order = 0   enu =    46.889236  +
+n =  3   l =  1   order = 1   enu =    46.889236  +
+
+Atom : S, class id : 47
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    -2.577777  +
+n =  2   l =  0   order = 1   enu =    -2.577777  +
+n =  2   l =  1   order = 0   enu =    -2.066446  +
+n =  2   l =  1   order = 1   enu =    -2.066446  +
+n =  3   l =  0   order = 0   enu =    62.449163  +
+n =  3   l =  0   order = 1   enu =    62.449163  +
+n =  3   l =  1   order = 0   enu =    46.888303  +
+n =  3   l =  1   order = 1   enu =    46.888303  +
+
+Atom : N, class id : 48
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -24.159032  +
+n =  1   l =  0   order = 1   enu =   -24.159032  +
+n =  2   l =  0   order = 0   enu =     4.383305  +
+n =  2   l =  0   order = 1   enu =     4.383305  +
+n =  2   l =  1   order = 0   enu =    -1.778204  +
+n =  2   l =  1   order = 1   enu =    -1.778204  +
+
+Atom : N, class id : 49
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -24.158701  +
+n =  1   l =  0   order = 1   enu =   -24.158701  +
+n =  2   l =  0   order = 0   enu =     4.383640  +
+n =  2   l =  0   order = 1   enu =     4.383640  +
+n =  2   l =  1   order = 0   enu =    -1.777868  +
+n =  2   l =  1   order = 1   enu =    -1.777868  +
+
+Atom : N, class id : 50
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -24.156516  +
+n =  1   l =  0   order = 1   enu =   -24.156516  +
+n =  2   l =  0   order = 0   enu =     4.385177  +
+n =  2   l =  0   order = 1   enu =     4.385177  +
+n =  2   l =  1   order = 0   enu =    -1.776501  +
+n =  2   l =  1   order = 1   enu =    -1.776501  +
+
+Atom : N, class id : 51
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -24.156133  +
+n =  1   l =  0   order = 1   enu =   -24.156133  +
+n =  2   l =  0   order = 0   enu =     4.385562  +
+n =  2   l =  0   order = 1   enu =     4.385562  +
+n =  2   l =  1   order = 0   enu =    -1.776116  +
+n =  2   l =  1   order = 1   enu =    -1.776116  +
+
+Atom : N, class id : 52
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.517544  +
+n =  1   l =  0   order = 1   enu =   -13.517544  +
+n =  2   l =  0   order = 0   enu =    13.772056  +
+n =  2   l =  0   order = 1   enu =    13.772056  +
+n =  2   l =  1   order = 0   enu =     6.982966  +
+n =  2   l =  1   order = 1   enu =     6.982966  +
+
+Atom : N, class id : 53
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.516900  +
+n =  1   l =  0   order = 1   enu =   -13.516900  +
+n =  2   l =  0   order = 0   enu =    13.772699  +
+n =  2   l =  0   order = 1   enu =    13.772699  +
+n =  2   l =  1   order = 0   enu =     6.983610  +
+n =  2   l =  1   order = 1   enu =     6.983610  +
+
+Atom : N, class id : 54
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.515077  +
+n =  1   l =  0   order = 1   enu =   -13.515077  +
+n =  2   l =  0   order = 0   enu =    13.774501  +
+n =  2   l =  0   order = 1   enu =    13.774501  +
+n =  2   l =  1   order = 0   enu =     6.985395  +
+n =  2   l =  1   order = 1   enu =     6.985395  +
+
+Atom : N, class id : 55
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.514529  +
+n =  1   l =  0   order = 1   enu =   -13.514529  +
+n =  2   l =  0   order = 0   enu =    13.775049  +
+n =  2   l =  0   order = 1   enu =    13.775049  +
+n =  2   l =  1   order = 0   enu =     6.985943  +
+n =  2   l =  1   order = 1   enu =     6.985943  +
+
+Atom : N, class id : 56
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -24.159381  +
+n =  1   l =  0   order = 1   enu =   -24.159381  +
+n =  2   l =  0   order = 0   enu =     4.382955  +
+n =  2   l =  0   order = 1   enu =     4.382955  +
+n =  2   l =  1   order = 0   enu =    -1.778555  +
+n =  2   l =  1   order = 1   enu =    -1.778555  +
+
+Atom : N, class id : 57
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -24.159572  +
+n =  1   l =  0   order = 1   enu =   -24.159572  +
+n =  2   l =  0   order = 0   enu =     4.382764  +
+n =  2   l =  0   order = 1   enu =     4.382764  +
+n =  2   l =  1   order = 0   enu =    -1.778744  +
+n =  2   l =  1   order = 1   enu =    -1.778744  +
+
+Atom : N, class id : 58
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -24.156269  +
+n =  1   l =  0   order = 1   enu =   -24.156269  +
+n =  2   l =  0   order = 0   enu =     4.385429  +
+n =  2   l =  0   order = 1   enu =     4.385429  +
+n =  2   l =  1   order = 0   enu =    -1.776247  +
+n =  2   l =  1   order = 1   enu =    -1.776247  +
+
+Atom : N, class id : 59
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -24.156799  +
+n =  1   l =  0   order = 1   enu =   -24.156799  +
+n =  2   l =  0   order = 0   enu =     4.384888  +
+n =  2   l =  0   order = 1   enu =     4.384888  +
+n =  2   l =  1   order = 0   enu =    -1.776792  +
+n =  2   l =  1   order = 1   enu =    -1.776792  +
+
+Atom : N, class id : 60
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.517667  +
+n =  1   l =  0   order = 1   enu =   -13.517667  +
+n =  2   l =  0   order = 0   enu =    13.771932  +
+n =  2   l =  0   order = 1   enu =    13.771932  +
+n =  2   l =  1   order = 0   enu =     6.982843  +
+n =  2   l =  1   order = 1   enu =     6.982843  +
+
+Atom : N, class id : 61
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.518370  +
+n =  1   l =  0   order = 1   enu =   -13.518370  +
+n =  2   l =  0   order = 0   enu =    13.771229  +
+n =  2   l =  0   order = 1   enu =    13.771229  +
+n =  2   l =  1   order = 0   enu =     6.982139  +
+n =  2   l =  1   order = 1   enu =     6.982139  +
+
+Atom : N, class id : 62
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.514987  +
+n =  1   l =  0   order = 1   enu =   -13.514987  +
+n =  2   l =  0   order = 0   enu =    13.774591  +
+n =  2   l =  0   order = 1   enu =    13.774591  +
+n =  2   l =  1   order = 0   enu =     6.985484  +
+n =  2   l =  1   order = 1   enu =     6.985484  +
+
+Atom : N, class id : 63
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.515693  +
+n =  1   l =  0   order = 1   enu =   -13.515693  +
+n =  2   l =  0   order = 0   enu =    13.773885  +
+n =  2   l =  0   order = 1   enu =    13.773885  +
+n =  2   l =  1   order = 0   enu =     6.984778  +
+n =  2   l =  1   order = 1   enu =     6.984778  +
+
+Atom : Cl, class id : 64
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =     2.037386  +
+n =  2   l =  0   order = 1   enu =     2.037386  +
+n =  2   l =  1   order = 0   enu =     2.585725  +
+n =  2   l =  1   order = 1   enu =     2.585725  +
+n =  3   l =  0   order = 0   enu =    77.227020  +
+n =  3   l =  0   order = 1   enu =    77.227020  +
+n =  3   l =  1   order = 0   enu =    59.406541  +
+n =  3   l =  1   order = 1   enu =    59.406541  +
+
+Atom : Cl, class id : 65
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =     4.187211  +
+n =  2   l =  0   order = 1   enu =     4.187211  +
+n =  2   l =  1   order = 0   enu =     4.733943  +
+n =  2   l =  1   order = 1   enu =     4.733943  +
+n =  3   l =  0   order = 0   enu =    79.375195  +
+n =  3   l =  0   order = 1   enu =    79.375195  +
+n =  3   l =  1   order = 0   enu =    61.554465  +
+n =  3   l =  1   order = 1   enu =    61.554465  +
+
+Atom : Cl, class id : 66
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =     2.038040  +
+n =  2   l =  0   order = 1   enu =     2.038040  +
+n =  2   l =  1   order = 0   enu =     2.586378  +
+n =  2   l =  1   order = 1   enu =     2.586378  +
+n =  3   l =  0   order = 0   enu =    77.227671  +
+n =  3   l =  0   order = 1   enu =    77.227671  +
+n =  3   l =  1   order = 0   enu =    59.407192  +
+n =  3   l =  1   order = 1   enu =    59.407192  +
+
+Atom : Cl, class id : 67
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =     4.188505  +
+n =  2   l =  0   order = 1   enu =     4.188505  +
+n =  2   l =  1   order = 0   enu =     4.735245  +
+n =  2   l =  1   order = 1   enu =     4.735245  +
+n =  3   l =  0   order = 0   enu =    79.376499  +
+n =  3   l =  0   order = 1   enu =    79.376499  +
+n =  3   l =  1   order = 0   enu =    61.555772  +
+n =  3   l =  1   order = 1   enu =    61.555772  +
+
+Atom : Ni, class id : 68
+augmented waves
+local orbitals
+n =  3   l =  0   order = 0   enu =    29.888883  +
+n =  3   l =  0   order = 1   enu =    29.888883  +
+n =  3   l =  1   order = 0   enu =    31.415737  +
+n =  3   l =  1   order = 1   enu =    31.415737  +
+n =  3   l =  2   order = 0   enu =    33.962131  +
+n =  3   l =  2   order = 1   enu =    33.962131  +
+n =  4   l =  0   order = 0   enu =    50.664127  +
+n =  4   l =  0   order = 1   enu =    50.664127  +
+
+Atom : Ni, class id : 69
+augmented waves
+local orbitals
+n =  3   l =  0   order = 0   enu =    29.888642  +
+n =  3   l =  0   order = 1   enu =    29.888642  +
+n =  3   l =  1   order = 0   enu =    31.415497  +
+n =  3   l =  1   order = 1   enu =    31.415497  +
+n =  3   l =  2   order = 0   enu =    33.961890  +
+n =  3   l =  2   order = 1   enu =    33.961890  +
+n =  4   l =  0   order = 0   enu =    50.663888  +
+n =  4   l =  0   order = 1   enu =    50.663888  +
+
+[solve] iterative solver tolerance (occupied, empty) : 1.0000e-13, 1.0000e-13
+[get_singular_components] smallest eigen-value of the singular components:   0.0000485889043740
+[solve] Lowest band energies
+ik :  0,   -24.149962  -24.149772  -24.149423  -24.149091  -24.147457  -24.147173  -24.146925  -24.146790  -13.503861  -13.503157
+           -24.149962  -24.149772  -24.149423  -24.149091  -24.147457  -24.147173  -24.146925  -24.146790  -13.503861  -13.503157
+ik :  1,   -24.149958  -24.149767  -24.149418  -24.149086  -24.147452  -24.147167  -24.146920  -24.146785  -13.503861  -13.503157
+           -24.149958  -24.149767  -24.149418  -24.149086  -24.147452  -24.147167  -24.146920  -24.146785  -13.503861  -13.503157
+ik :  2,   -24.149958  -24.149767  -24.149419  -24.149086  -24.147449  -24.147165  -24.146917  -24.146783  -13.503861  -13.503157
+           -24.149958  -24.149767  -24.149419  -24.149086  -24.147449  -24.147165  -24.146917  -24.146783  -13.503860  -13.503157
+ik :  3,   -24.149957  -24.149767  -24.149418  -24.149086  -24.147450  -24.147165  -24.146918  -24.146783  -13.503861  -13.503157
+           -24.149957  -24.149767  -24.149418  -24.149086  -24.147450  -24.147165  -24.146918  -24.146783  -13.503861  -13.503157
+ik :  4,   -24.149950  -24.149759  -24.149412  -24.149082  -24.147444  -24.147151  -24.146915  -24.146777  -13.503861  -13.503157
+           -24.149950  -24.149759  -24.149412  -24.149082  -24.147444  -24.147151  -24.146915  -24.146777  -13.503861  -13.503157
+ik :  5,   -24.149959  -24.149768  -24.149420  -24.149087  -24.147452  -24.147168  -24.146920  -24.146785  -13.503861  -13.503157
+           -24.149959  -24.149768  -24.149420  -24.149087  -24.147452  -24.147168  -24.146920  -24.146785  -13.503861  -13.503157
+ik :  6,   -24.149959  -24.149768  -24.149420  -24.149087  -24.147452  -24.147168  -24.146920  -24.146786  -13.503861  -13.503157
+           -24.149959  -24.149768  -24.149420  -24.149087  -24.147452  -24.147168  -24.146920  -24.146786  -13.503861  -13.503157
+ik :  7,   -24.149956  -24.149766  -24.149417  -24.149085  -24.147448  -24.147164  -24.146916  -24.146781  -13.503860  -13.503157
+           -24.149956  -24.149766  -24.149417  -24.149085  -24.147448  -24.147164  -24.146916  -24.146781  -13.503860  -13.503157
+[find] 
+[find] Charges and magnetic moments
+[find] --------------------------------------------------------------------------------
+[find] atom      charge    core leakage                 moment                |moment|
+[find] --------------------------------------------------------------------------------
+[find]    0    0.666956    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]    1    0.667023    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]    2    0.667427    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000001
+[find]    3    0.667448    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]    4    0.044667    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]    5    0.044672    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]    6    0.039295    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]    7    0.039282    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]    8    0.003407    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]    9    0.003407    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   10    0.003407    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   11    0.003407    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   12    0.003593    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   13    0.003593    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   14    0.003597    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   15    0.003597    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   16    0.667090    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   17    0.667046    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   18    0.667387    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   19    0.667423    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000001
+[find]   20    0.044710    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   21    0.044692    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   22    0.039282    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   23    0.039293    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   24    0.003407    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   25    0.003407    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   26    0.003407    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   27    0.003407    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   28    0.003594    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   29    0.003594    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   30    0.003597    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   31    0.003597    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   32    1.974683    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   33    1.974683    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   34    1.974385    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   35    1.974385    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   36    1.974684    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   37    1.974685    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   38    1.974385    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   39    1.974387    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   40    7.973500    2.091736e-05  [  0.00000,   0.00000,   0.00270]    0.002705
+[find]   41    7.973509    2.091738e-05  [  0.00000,   0.00000,   0.00270]    0.002702
+[find]   42    7.968378    2.090995e-05  [  0.00000,   0.00000,   0.00285]    0.002851
+[find]   43    7.968335    2.091002e-05  [  0.00000,   0.00000,   0.00285]    0.002851
+[find]   44    7.973502    2.091745e-05  [  0.00000,   0.00000,  -0.00270]    0.002701
+[find]   45    7.973497    2.091737e-05  [  0.00000,   0.00000,  -0.00270]    0.002703
+[find]   46    7.968359    2.090997e-05  [  0.00000,   0.00000,  -0.00285]    0.002853
+[find]   47    7.968408    2.090985e-05  [  0.00000,   0.00000,  -0.00285]    0.002850
+[find]   48    2.646313    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   49    2.646246    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   50    2.654279    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   51    2.654134    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   52    2.024764    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   53    2.024764    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   54    2.024766    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   55    2.024766    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   56    2.646443    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   57    2.646485    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   58    2.654156    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   59    2.654354    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   60    2.024764    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   61    2.024764    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   62    2.024766    0.000000e+00  [  0.00000,   0.00000,  -0.00000]    0.000000
+[find]   63    2.024766    0.000000e+00  [  0.00000,   0.00000,   0.00000]    0.000000
+[find]   64    5.689726    2.198056e-05  [  0.00000,   0.00000,   0.00297]    0.002968
+[find]   65    5.666014    2.195171e-05  [  0.00000,   0.00000,   0.00624]    0.006242
+[find]   66    5.689731    2.198053e-05  [  0.00000,   0.00000,  -0.00297]    0.002967
+[find]   67    5.666065    2.195183e-05  [  0.00000,   0.00000,  -0.00624]    0.006242
+[find]   68   20.901211    3.214172e-04  [  0.00000,   0.00000,  -0.28343]    0.283426
+[find]   69   20.901160    3.214173e-04  [  0.00000,   0.00000,   0.28342]    0.283422
+[find] 
+[find] total core leakage    : 8.98008493e-04
+[find] interstitial charge   : 256.791965
+[find] interstitial moment   : [  0.00000,   0.00000,   0.00007], magnitude : 0.000074
+[find] total charge          : 443.999882
+[find] total moment          : [  0.00000,   0.00000,   0.00008], magnitude : 0.000076
+[find] 
+[find] Energy
+[find] --------------------------------------------------------------------------------
+[find] valence_eval_sum               :   -2578.96439872
+[find] core_eval_sum                  :   -3048.48821307
+[find] kinetic energy                 :    7787.52941638
+[find] enuc                           :  -10685.25009154
+[find] <rho|V^{XC}>                   :    -761.99425748
+[find] <rho|E^{XC}>                   :    -577.11753685
+[find] <mag|B^{XC}>                   :      -0.23350306
+[find] <rho|V^{H}>                    :  -12652.77246548
+[find] smearing (-TS)                 :      -0.00018312
+[find] SCF correction                 :    1392.85720761
+[find] Total energy                   :   -8408.36723714 (Ha),  -16816.73447427 (Ry)
+[find] 
+[find] band gap (eV)                  :       0.00000000
+[find] Efermi                         :      -3.86625319
+[find] 
+[find] iteration : 2, RMS : 5.357594105246e-01, energy difference : -3.133537306790e+03
+[find] residual density Hartree energy : 2.032719597434e+03
+[find] 
+[find] +------------------------------+
+[find] | SCF iteration   3 out of 200|
+[find] +------------------------------+
+[find] 
+
+Linearization energies
+Atom : H, class id : 0
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     6.539908  +
+n =  1   l =  0   order = 1   enu =     6.539908  +
+
+Atom : H, class id : 1
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     6.541545  +
+n =  1   l =  0   order = 1   enu =     6.541545  +
+
+Atom : H, class id : 2
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     6.544528  +
+n =  1   l =  0   order = 1   enu =     6.544528  +
+
+Atom : H, class id : 3
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     6.542320  +
+n =  1   l =  0   order = 1   enu =     6.542320  +
+
+Atom : H, class id : 4
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.274009  +
+n =  1   l =  0   order = 1   enu =     3.274009  +
+
+Atom : H, class id : 5
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.273649  +
+n =  1   l =  0   order = 1   enu =     3.273649  +
+
+Atom : H, class id : 6
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.266700  +
+n =  1   l =  0   order = 1   enu =     3.266700  +
+
+Atom : H, class id : 7
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.264626  +
+n =  1   l =  0   order = 1   enu =     3.264626  +
+
+Atom : H, class id : 8
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     5.638088  +
+n =  1   l =  0   order = 1   enu =     5.638088  +
+
+Atom : H, class id : 9
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     5.637257  +
+n =  1   l =  0   order = 1   enu =     5.637257  +
+
+Atom : H, class id : 10
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     5.640652  +
+n =  1   l =  0   order = 1   enu =     5.640652  +
+
+Atom : H, class id : 11
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     5.639832  +
+n =  1   l =  0   order = 1   enu =     5.639832  +
+
+Atom : H, class id : 12
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.903022  +
+n =  1   l =  0   order = 1   enu =     4.903022  +
+
+Atom : H, class id : 13
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.902300  +
+n =  1   l =  0   order = 1   enu =     4.902300  +
+
+Atom : H, class id : 14
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.905641  +
+n =  1   l =  0   order = 1   enu =     4.905641  +
+
+Atom : H, class id : 15
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.905113  +
+n =  1   l =  0   order = 1   enu =     4.905113  +
+
+Atom : H, class id : 16
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     6.543456  +
+n =  1   l =  0   order = 1   enu =     6.543456  +
+
+Atom : H, class id : 17
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     6.541770  +
+n =  1   l =  0   order = 1   enu =     6.541770  +
+
+Atom : H, class id : 18
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     6.541865  +
+n =  1   l =  0   order = 1   enu =     6.541865  +
+
+Atom : H, class id : 19
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     6.544208  +
+n =  1   l =  0   order = 1   enu =     6.544208  +
+
+Atom : H, class id : 20
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.275113  +
+n =  1   l =  0   order = 1   enu =     3.275113  +
+
+Atom : H, class id : 21
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.275292  +
+n =  1   l =  0   order = 1   enu =     3.275292  +
+
+Atom : H, class id : 22
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.264454  +
+n =  1   l =  0   order = 1   enu =     3.264454  +
+
+Atom : H, class id : 23
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     3.266691  +
+n =  1   l =  0   order = 1   enu =     3.266691  +
+
+Atom : H, class id : 24
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     5.638595  +
+n =  1   l =  0   order = 1   enu =     5.638595  +
+
+Atom : H, class id : 25
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     5.639381  +
+n =  1   l =  0   order = 1   enu =     5.639381  +
+
+Atom : H, class id : 26
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     5.640899  +
+n =  1   l =  0   order = 1   enu =     5.640899  +
+
+Atom : H, class id : 27
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     5.641901  +
+n =  1   l =  0   order = 1   enu =     5.641901  +
+
+Atom : H, class id : 28
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.903249  +
+n =  1   l =  0   order = 1   enu =     4.903249  +
+
+Atom : H, class id : 29
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.904490  +
+n =  1   l =  0   order = 1   enu =     4.904490  +
+
+Atom : H, class id : 30
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.905855  +
+n =  1   l =  0   order = 1   enu =     4.905855  +
+
+Atom : H, class id : 31
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =     4.906975  +
+n =  1   l =  0   order = 1   enu =     4.906975  +
+
+Atom : C, class id : 32
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -10.006628  +
+n =  1   l =  0   order = 1   enu =   -10.006628  +
+n =  2   l =  0   order = 0   enu =    16.318948  +
+n =  2   l =  0   order = 1   enu =    16.318948  +
+n =  2   l =  1   order = 0   enu =     7.428092  +
+n =  2   l =  1   order = 1   enu =     7.428092  +
+
+Atom : C, class id : 33
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -10.006276  +
+n =  1   l =  0   order = 1   enu =   -10.006276  +
+n =  2   l =  0   order = 0   enu =    16.319300  +
+n =  2   l =  0   order = 1   enu =    16.319300  +
+n =  2   l =  1   order = 0   enu =     7.428444  +
+n =  2   l =  1   order = 1   enu =     7.428444  +
+
+Atom : C, class id : 34
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -9.998700  +
+n =  1   l =  0   order = 1   enu =    -9.998700  +
+n =  2   l =  0   order = 0   enu =    16.327131  +
+n =  2   l =  0   order = 1   enu =    16.327131  +
+n =  2   l =  1   order = 0   enu =     7.436607  +
+n =  2   l =  1   order = 1   enu =     7.436607  +
+
+Atom : C, class id : 35
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -10.000672  +
+n =  1   l =  0   order = 1   enu =   -10.000672  +
+n =  2   l =  0   order = 0   enu =    16.325158  +
+n =  2   l =  0   order = 1   enu =    16.325158  +
+n =  2   l =  1   order = 0   enu =     7.434635  +
+n =  2   l =  1   order = 1   enu =     7.434635  +
+
+Atom : C, class id : 36
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -10.005308  +
+n =  1   l =  0   order = 1   enu =   -10.005308  +
+n =  2   l =  0   order = 0   enu =    16.320268  +
+n =  2   l =  0   order = 1   enu =    16.320268  +
+n =  2   l =  1   order = 0   enu =     7.429412  +
+n =  2   l =  1   order = 1   enu =     7.429412  +
+
+Atom : C, class id : 37
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -10.005497  +
+n =  1   l =  0   order = 1   enu =   -10.005497  +
+n =  2   l =  0   order = 0   enu =    16.320079  +
+n =  2   l =  0   order = 1   enu =    16.320079  +
+n =  2   l =  1   order = 0   enu =     7.429222  +
+n =  2   l =  1   order = 1   enu =     7.429222  +
+
+Atom : C, class id : 38
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -9.999482  +
+n =  1   l =  0   order = 1   enu =    -9.999482  +
+n =  2   l =  0   order = 0   enu =    16.326348  +
+n =  2   l =  0   order = 1   enu =    16.326348  +
+n =  2   l =  1   order = 0   enu =     7.435824  +
+n =  2   l =  1   order = 1   enu =     7.435824  +
+
+Atom : C, class id : 39
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =    -9.997446  +
+n =  1   l =  0   order = 1   enu =    -9.997446  +
+n =  2   l =  0   order = 0   enu =    16.328384  +
+n =  2   l =  0   order = 1   enu =    16.328384  +
+n =  2   l =  1   order = 0   enu =     7.437859  +
+n =  2   l =  1   order = 1   enu =     7.437859  +
+
+Atom : S, class id : 40
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    -4.680412  +
+n =  2   l =  0   order = 1   enu =    -4.680412  +
+n =  2   l =  1   order = 0   enu =    -4.192825  +
+n =  2   l =  1   order = 1   enu =    -4.192825  +
+n =  3   l =  0   order = 0   enu =    60.262301  +
+n =  3   l =  0   order = 1   enu =    60.262301  +
+n =  3   l =  1   order = 0   enu =    44.699331  +
+n =  3   l =  1   order = 1   enu =    44.699331  +
+
+Atom : S, class id : 41
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    -4.680666  +
+n =  2   l =  0   order = 1   enu =    -4.680666  +
+n =  2   l =  1   order = 0   enu =    -4.193078  +
+n =  2   l =  1   order = 1   enu =    -4.193078  +
+n =  3   l =  0   order = 0   enu =    60.262048  +
+n =  3   l =  0   order = 1   enu =    60.262048  +
+n =  3   l =  1   order = 0   enu =    44.699079  +
+n =  3   l =  1   order = 1   enu =    44.699079  +
+
+Atom : S, class id : 42
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    -4.676388  +
+n =  2   l =  0   order = 1   enu =    -4.676388  +
+n =  2   l =  1   order = 0   enu =    -4.188202  +
+n =  2   l =  1   order = 1   enu =    -4.188202  +
+n =  3   l =  0   order = 0   enu =    60.267682  +
+n =  3   l =  0   order = 1   enu =    60.267682  +
+n =  3   l =  1   order = 0   enu =    44.704714  +
+n =  3   l =  1   order = 1   enu =    44.704714  +
+
+Atom : S, class id : 43
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    -4.677239  +
+n =  2   l =  0   order = 1   enu =    -4.677239  +
+n =  2   l =  1   order = 0   enu =    -4.189058  +
+n =  2   l =  1   order = 1   enu =    -4.189058  +
+n =  3   l =  0   order = 0   enu =    60.266826  +
+n =  3   l =  0   order = 1   enu =    60.266826  +
+n =  3   l =  1   order = 0   enu =    44.703856  +
+n =  3   l =  1   order = 1   enu =    44.703856  +
+
+Atom : S, class id : 44
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    -4.681594  +
+n =  2   l =  0   order = 1   enu =    -4.681594  +
+n =  2   l =  1   order = 0   enu =    -4.194007  +
+n =  2   l =  1   order = 1   enu =    -4.194007  +
+n =  3   l =  0   order = 0   enu =    60.261119  +
+n =  3   l =  0   order = 1   enu =    60.261119  +
+n =  3   l =  1   order = 0   enu =    44.698149  +
+n =  3   l =  1   order = 1   enu =    44.698149  +
+
+Atom : S, class id : 45
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    -4.681357  +
+n =  2   l =  0   order = 1   enu =    -4.681357  +
+n =  2   l =  1   order = 0   enu =    -4.193771  +
+n =  2   l =  1   order = 1   enu =    -4.193771  +
+n =  3   l =  0   order = 0   enu =    60.261355  +
+n =  3   l =  0   order = 1   enu =    60.261355  +
+n =  3   l =  1   order = 0   enu =    44.698385  +
+n =  3   l =  1   order = 1   enu =    44.698385  +
+
+Atom : S, class id : 46
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    -4.675907  +
+n =  2   l =  0   order = 1   enu =    -4.675907  +
+n =  2   l =  1   order = 0   enu =    -4.187724  +
+n =  2   l =  1   order = 1   enu =    -4.187724  +
+n =  3   l =  0   order = 0   enu =    60.268160  +
+n =  3   l =  0   order = 1   enu =    60.268160  +
+n =  3   l =  1   order = 0   enu =    44.705192  +
+n =  3   l =  1   order = 1   enu =    44.705192  +
+
+Atom : S, class id : 47
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =    -4.675159  +
+n =  2   l =  0   order = 1   enu =    -4.675159  +
+n =  2   l =  1   order = 0   enu =    -4.186970  +
+n =  2   l =  1   order = 1   enu =    -4.186970  +
+n =  3   l =  0   order = 0   enu =    60.268915  +
+n =  3   l =  0   order = 1   enu =    60.268915  +
+n =  3   l =  1   order = 0   enu =    44.705948  +
+n =  3   l =  1   order = 1   enu =    44.705948  +
+
+Atom : N, class id : 48
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.303673  +
+n =  1   l =  0   order = 1   enu =   -13.303673  +
+n =  2   l =  0   order = 0   enu =    14.300173  +
+n =  2   l =  0   order = 1   enu =    14.300173  +
+n =  2   l =  1   order = 0   enu =     7.753494  +
+n =  2   l =  1   order = 1   enu =     7.753494  +
+
+Atom : N, class id : 49
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.303496  +
+n =  1   l =  0   order = 1   enu =   -13.303496  +
+n =  2   l =  0   order = 0   enu =    14.300367  +
+n =  2   l =  0   order = 1   enu =    14.300367  +
+n =  2   l =  1   order = 0   enu =     7.753695  +
+n =  2   l =  1   order = 1   enu =     7.753695  +
+
+Atom : N, class id : 50
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.289009  +
+n =  1   l =  0   order = 1   enu =   -13.289009  +
+n =  2   l =  0   order = 0   enu =    14.312882  +
+n =  2   l =  0   order = 1   enu =    14.312882  +
+n =  2   l =  1   order = 0   enu =     7.765449  +
+n =  2   l =  1   order = 1   enu =     7.765449  +
+
+Atom : N, class id : 51
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.291954  +
+n =  1   l =  0   order = 1   enu =   -13.291954  +
+n =  2   l =  0   order = 0   enu =    14.309976  +
+n =  2   l =  0   order = 1   enu =    14.309976  +
+n =  2   l =  1   order = 0   enu =     7.762558  +
+n =  2   l =  1   order = 1   enu =     7.762558  +
+
+Atom : N, class id : 52
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -14.554085  +
+n =  1   l =  0   order = 1   enu =   -14.554085  +
+n =  2   l =  0   order = 0   enu =    12.795318  +
+n =  2   l =  0   order = 1   enu =    12.795318  +
+n =  2   l =  1   order = 0   enu =     6.033308  +
+n =  2   l =  1   order = 1   enu =     6.033308  +
+
+Atom : N, class id : 53
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -14.554959  +
+n =  1   l =  0   order = 1   enu =   -14.554959  +
+n =  2   l =  0   order = 0   enu =    12.794445  +
+n =  2   l =  0   order = 1   enu =    12.794445  +
+n =  2   l =  1   order = 0   enu =     6.032434  +
+n =  2   l =  1   order = 1   enu =     6.032434  +
+
+Atom : N, class id : 54
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -14.552535  +
+n =  1   l =  0   order = 1   enu =   -14.552535  +
+n =  2   l =  0   order = 0   enu =    12.796866  +
+n =  2   l =  0   order = 1   enu =    12.796866  +
+n =  2   l =  1   order = 0   enu =     6.034854  +
+n =  2   l =  1   order = 1   enu =     6.034854  +
+
+Atom : N, class id : 55
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -14.554014  +
+n =  1   l =  0   order = 1   enu =   -14.554014  +
+n =  2   l =  0   order = 0   enu =    12.795388  +
+n =  2   l =  0   order = 1   enu =    12.795388  +
+n =  2   l =  1   order = 0   enu =     6.033376  +
+n =  2   l =  1   order = 1   enu =     6.033376  +
+
+Atom : N, class id : 56
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.301108  +
+n =  1   l =  0   order = 1   enu =   -13.301108  +
+n =  2   l =  0   order = 0   enu =    14.302706  +
+n =  2   l =  0   order = 1   enu =    14.302706  +
+n =  2   l =  1   order = 0   enu =     7.756015  +
+n =  2   l =  1   order = 1   enu =     7.756015  +
+
+Atom : N, class id : 57
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.301521  +
+n =  1   l =  0   order = 1   enu =   -13.301521  +
+n =  2   l =  0   order = 0   enu =    14.302281  +
+n =  2   l =  0   order = 1   enu =    14.302281  +
+n =  2   l =  1   order = 0   enu =     7.755586  +
+n =  2   l =  1   order = 1   enu =     7.755586  +
+
+Atom : N, class id : 58
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.291963  +
+n =  1   l =  0   order = 1   enu =   -13.291963  +
+n =  2   l =  0   order = 0   enu =    14.309961  +
+n =  2   l =  0   order = 1   enu =    14.309961  +
+n =  2   l =  1   order = 0   enu =     7.762542  +
+n =  2   l =  1   order = 1   enu =     7.762542  +
+
+Atom : N, class id : 59
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -13.288251  +
+n =  1   l =  0   order = 1   enu =   -13.288251  +
+n =  2   l =  0   order = 0   enu =    14.313623  +
+n =  2   l =  0   order = 1   enu =    14.313623  +
+n =  2   l =  1   order = 0   enu =     7.766184  +
+n =  2   l =  1   order = 1   enu =     7.766184  +
+
+Atom : N, class id : 60
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -14.553737  +
+n =  1   l =  0   order = 1   enu =   -14.553737  +
+n =  2   l =  0   order = 0   enu =    12.795667  +
+n =  2   l =  0   order = 1   enu =    12.795667  +
+n =  2   l =  1   order = 0   enu =     6.033657  +
+n =  2   l =  1   order = 1   enu =     6.033657  +
+
+Atom : N, class id : 61
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -14.553021  +
+n =  1   l =  0   order = 1   enu =   -14.553021  +
+n =  2   l =  0   order = 0   enu =    12.796383  +
+n =  2   l =  0   order = 1   enu =    12.796383  +
+n =  2   l =  1   order = 0   enu =     6.034373  +
+n =  2   l =  1   order = 1   enu =     6.034373  +
+
+Atom : N, class id : 62
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -14.552883  +
+n =  1   l =  0   order = 1   enu =   -14.552883  +
+n =  2   l =  0   order = 0   enu =    12.796519  +
+n =  2   l =  0   order = 1   enu =    12.796519  +
+n =  2   l =  1   order = 0   enu =     6.034507  +
+n =  2   l =  1   order = 1   enu =     6.034507  +
+
+Atom : N, class id : 63
+augmented waves
+local orbitals
+n =  1   l =  0   order = 0   enu =   -14.551501  +
+n =  1   l =  0   order = 1   enu =   -14.551501  +
+n =  2   l =  0   order = 0   enu =    12.797900  +
+n =  2   l =  0   order = 1   enu =    12.797900  +
+n =  2   l =  1   order = 0   enu =     6.035888  +
+n =  2   l =  1   order = 1   enu =     6.035888  +
+
+Atom : Cl, class id : 64
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =   -13.102261  +
+n =  2   l =  0   order = 1   enu =   -13.102261  +
+n =  2   l =  1   order = 0   enu =   -12.943722  +
+n =  2   l =  1   order = 1   enu =   -12.943722  +
+n =  3   l =  0   order = 0   enu =    61.591835  +
+n =  3   l =  0   order = 1   enu =    61.591835  +
+n =  3   l =  1   order = 0   enu =    43.664214  +
+n =  3   l =  1   order = 1   enu =    43.664214  +
+
+Atom : Cl, class id : 65
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =   -11.632054  +
+n =  2   l =  0   order = 1   enu =   -11.632054  +
+n =  2   l =  1   order = 0   enu =   -11.474846  +
+n =  2   l =  1   order = 1   enu =   -11.474846  +
+n =  3   l =  0   order = 0   enu =    63.061087  +
+n =  3   l =  0   order = 1   enu =    63.061087  +
+n =  3   l =  1   order = 0   enu =    45.133228  +
+n =  3   l =  1   order = 1   enu =    45.133228  +
+
+Atom : Cl, class id : 66
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =   -13.101441  +
+n =  2   l =  0   order = 1   enu =   -13.101441  +
+n =  2   l =  1   order = 0   enu =   -12.942903  +
+n =  2   l =  1   order = 1   enu =   -12.942903  +
+n =  3   l =  0   order = 0   enu =    61.592653  +
+n =  3   l =  0   order = 1   enu =    61.592653  +
+n =  3   l =  1   order = 0   enu =    43.665032  +
+n =  3   l =  1   order = 1   enu =    43.665032  +
+
+Atom : Cl, class id : 67
+augmented waves
+local orbitals
+n =  2   l =  0   order = 0   enu =   -11.632717  +
+n =  2   l =  0   order = 1   enu =   -11.632717  +
+n =  2   l =  1   order = 0   enu =   -11.475505  +
+n =  2   l =  1   order = 1   enu =   -11.475505  +
+n =  3   l =  0   order = 0   enu =    63.060429  +
+n =  3   l =  0   order = 1   enu =    63.060429  +
+n =  3   l =  1   order = 0   enu =    45.132572  +
+n =  3   l =  1   order = 1   enu =    45.132572  +
+
+Atom : Ni, class id : 68
+augmented waves
+local orbitals
+n =  3   l =  0   order = 0   enu =     2.812193  +
+n =  3   l =  0   order = 1   enu =     2.812193  +
+n =  3   l =  1   order = 0   enu =     4.252571  +
+n =  3   l =  1   order = 1   enu =     4.252571  +
+n =  3   l =  2   order = 0   enu =     6.603688  +
+n =  3   l =  2   order = 1   enu =     6.603688  +
+n =  4   l =  0   order = 0   enu =    23.111612  +
+n =  4   l =  0   order = 1   enu =    23.111612  +
+
+Atom : Ni, class id : 69
+augmented waves
+local orbitals
+n =  3   l =  0   order = 0   enu =     2.812192  +
+n =  3   l =  0   order = 1   enu =     2.812192  +
+n =  3   l =  1   order = 0   enu =     4.252569  +
+n =  3   l =  1   order = 1   enu =     4.252569  +
+n =  3   l =  2   order = 0   enu =     6.603686  +
+n =  3   l =  2   order = 1   enu =     6.603686  +
+n =  

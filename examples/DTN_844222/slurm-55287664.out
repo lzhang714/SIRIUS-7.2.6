@@ -1,0 +1,110 @@
+terminate called after throwing an instance of 'std::runtime_error'
+terminate called after throwing an instance of 'std::runtime_error'
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 160, matrix size = 297
+
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 160, matrix size = 297
+
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 160, matrix size = 297
+
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 160, matrix size = 297
+
+srun: error: nid01461: task 31: Aborted
+srun: launch/slurm: _step_signal: Terminating StepId=55287664.0
+terminate called after throwing an instance of 'std::runtime_error'
+terminate called after throwing an instance of 'std::runtime_error'
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 144, matrix size = 297
+
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 144, matrix size = 297
+
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 144, matrix size = 297
+
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 144, matrix size = 297
+
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 128, matrix size = 296
+
+terminate called after throwing an instance of 'std::runtime_error'
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 128, matrix size = 296
+
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 128, matrix size = 296
+
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 128, matrix size = 296
+
+terminate called after throwing an instance of 'std::runtime_error'
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 75, matrix size = 300
+
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 75, matrix size = 300
+
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 75, matrix size = 300
+
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 75, matrix size = 300
+
+srun: error: nid01460: tasks 28-29: Aborted
+srun: error: nid01260: tasks 14-15: Aborted
+srun: error: nid01259: tasks 12-13: Aborted
+srun: error: nid01201: tasks 0-1: Aborted
+srun: error: nid01202: tasks 2-3: Aborted
+srun: error: nid01388: tasks 20-21: Aborted
+srun: error: nid01389: tasks 22-23: Aborted
+srun: error: nid01247: task 8: Terminated
+srun: error: nid01407: task 27: Terminated
+srun: error: nid01406: task 25: Terminated
+srun: error: nid01244: task 5: Terminated
+srun: error: nid01245: task 6: Terminated
+srun: error: nid01248: tasks 10-11: Terminated
+srun: error: nid01407: task 26: Terminated
+srun: error: nid01306: tasks 18-19: Terminated
+srun: error: nid01245: task 7: Terminated
+srun: error: nid01305: tasks 16-17: Terminated
+srun: error: nid01406: task 24: Terminated
+srun: error: nid01247: task 9: Terminated
+srun: error: nid01244: task 4: Terminated
+srun: error: nid01461: task 30: Aborted (core dumped)
+srun: Force Terminated StepId=55287664.0
+ 
+ ================================================= 
+ The job is done in time.                          
+ Time used for execution: 26 min 32 sec 
+ ================================================= 
+ 
