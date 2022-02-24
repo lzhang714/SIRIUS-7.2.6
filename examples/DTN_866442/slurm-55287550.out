@@ -1,0 +1,46 @@
+terminate called after throwing an instance of 'std::runtime_error'
+terminate called after throwing an instance of 'std::runtime_error'
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 94, matrix size = 300
+
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 94, matrix size = 300
+
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 94, matrix size = 300
+
+  what():  
+[orthogonalize] /global/cscratch1/sd/zhang714/install_sirius_develop_spdlmaxapw/SIRIUS/src/SDDK/wf_ortho.cpp:275
+[orthogonalize] error in Cholesky factorization, info = 94, matrix size = 300
+
+srun: error: nid00654: task 18: Aborted
+srun: launch/slurm: _step_signal: Terminating StepId=55287550.0
+srun: error: nid00653: tasks 16-17: Aborted
+slurmstepd: error: *** STEP 55287550.0 ON nid00636 CANCELLED AT 2022-02-24T00:05:34 ***
+srun: error: nid00658: tasks 26-27: Terminated
+srun: error: nid00656: tasks 22-23: Terminated
+srun: error: nid00660: tasks 30-31: Terminated
+srun: error: nid00659: tasks 28-29: Terminated
+srun: error: nid00657: tasks 24-25: Terminated
+srun: error: nid00637: tasks 2-3: Terminated
+srun: error: nid00655: tasks 20-21: Terminated
+srun: error: nid00646: tasks 10-11: Terminated
+srun: error: nid00647: tasks 12-13: Terminated
+srun: error: nid00645: tasks 8-9: Terminated
+srun: error: nid00638: tasks 4-5: Terminated
+srun: error: nid00652: tasks 14-15: Terminated
+srun: error: nid00636: tasks 0-1: Terminated
+srun: error: nid00639: tasks 6-7: Terminated
+srun: error: nid00654: task 19: Aborted (core dumped)
+srun: Force Terminated StepId=55287550.0
+ 
+ ================================================= 
+ The job is done in time.                          
+ Time used for execution: 28 min 29 sec 
+ ================================================= 
+ 
